@@ -16,5 +16,10 @@ namespace Equipo_HJF
         {
             InitializeComponent();
         }
+
+        private void Formulario1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
