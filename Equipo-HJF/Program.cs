@@ -16,7 +16,7 @@ namespace Equipo_HJF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Formulario1());
+            Application.Run(new Form2());
         }
     }
 }
