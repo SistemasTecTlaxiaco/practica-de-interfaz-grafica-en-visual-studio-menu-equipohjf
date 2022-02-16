@@ -53,5 +53,20 @@ namespace Equipo_HJF
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void Men_Click(object sender, EventArgs e)
+        {
+            PanelMenu.Visible = true;
+        }
+
+        private void PanelMenu_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void estandar_Click(object sender, EventArgs e)
+        {
+            PanelMenu.Visible = false;
+        }
     }
 }
