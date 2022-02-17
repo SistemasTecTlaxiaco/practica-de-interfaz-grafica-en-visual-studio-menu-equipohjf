@@ -83,5 +83,10 @@ namespace Equipo_HJF
         {
 
         }
+
+        private void seis_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

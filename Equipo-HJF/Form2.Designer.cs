@@ -115,11 +115,11 @@ namespace Equipo_HJF
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightGray;
             this.label1.Location = new System.Drawing.Point(141, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 25);
+            this.label1.Size = new System.Drawing.Size(124, 27);
             this.label1.TabIndex = 4;
             this.label1.Text = "Calculadora";
             // 
@@ -255,7 +255,7 @@ namespace Equipo_HJF
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button3.Location = new System.Drawing.Point(2, 223);
@@ -270,7 +270,7 @@ namespace Equipo_HJF
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(0, 172);
@@ -285,7 +285,7 @@ namespace Equipo_HJF
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.Location = new System.Drawing.Point(0, 121);
@@ -305,7 +305,7 @@ namespace Equipo_HJF
             this.estandar.Cursor = System.Windows.Forms.Cursors.PanSW;
             this.estandar.FlatAppearance.BorderSize = 0;
             this.estandar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.estandar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estandar.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.estandar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.estandar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.estandar.Location = new System.Drawing.Point(0, 70);
@@ -334,6 +334,7 @@ namespace Equipo_HJF
             this.igual.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.igual.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.igual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.igual.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.igual.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.igual.Location = new System.Drawing.Point(296, 579);
             this.igual.Name = "igual";
@@ -387,6 +388,7 @@ namespace Equipo_HJF
             this.punto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.punto.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.punto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.punto.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.punto.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.punto.Location = new System.Drawing.Point(202, 579);
             this.punto.Name = "punto";
@@ -401,6 +403,7 @@ namespace Equipo_HJF
             this.Borrar1.BackColor = System.Drawing.SystemColors.InfoText;
             this.Borrar1.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.Borrar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Borrar1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Borrar1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.Borrar1.Location = new System.Drawing.Point(202, 224);
             this.Borrar1.Name = "Borrar1";
@@ -428,6 +431,7 @@ namespace Equipo_HJF
             this.Borrar2.BackColor = System.Drawing.SystemColors.InfoText;
             this.Borrar2.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.Borrar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Borrar2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Borrar2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.Borrar2.Location = new System.Drawing.Point(296, 224);
             this.Borrar2.Name = "Borrar2";
@@ -441,6 +445,7 @@ namespace Equipo_HJF
             this.suma.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.suma.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.suma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.suma.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.suma.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.suma.Location = new System.Drawing.Point(296, 508);
             this.suma.Name = "suma";
@@ -467,6 +472,7 @@ namespace Equipo_HJF
             this.tres.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tres.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.tres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tres.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tres.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.tres.Location = new System.Drawing.Point(202, 508);
             this.tres.Name = "tres";
@@ -506,6 +512,7 @@ namespace Equipo_HJF
             this.raiz.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.raiz.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.raiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.raiz.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.raiz.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.raiz.Location = new System.Drawing.Point(202, 295);
             this.raiz.Name = "raiz";
@@ -532,6 +539,7 @@ namespace Equipo_HJF
             this.dividir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dividir.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.dividir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dividir.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dividir.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.dividir.Location = new System.Drawing.Point(296, 295);
             this.dividir.Name = "dividir";
@@ -545,6 +553,7 @@ namespace Equipo_HJF
             this.resta.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.resta.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.resta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.resta.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resta.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.resta.Location = new System.Drawing.Point(296, 437);
             this.resta.Name = "resta";
@@ -571,6 +580,7 @@ namespace Equipo_HJF
             this.seis.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.seis.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.seis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.seis.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seis.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.seis.Location = new System.Drawing.Point(202, 437);
             this.seis.Name = "seis";
@@ -578,6 +588,7 @@ namespace Equipo_HJF
             this.seis.TabIndex = 24;
             this.seis.Text = "6";
             this.seis.UseVisualStyleBackColor = true;
+            this.seis.Click += new System.EventHandler(this.seis_Click);
             // 
             // ocho
             // 
@@ -610,6 +621,7 @@ namespace Equipo_HJF
             this.nueve.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.nueve.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.nueve.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.nueve.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nueve.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.nueve.Location = new System.Drawing.Point(202, 366);
             this.nueve.Name = "nueve";
@@ -636,6 +648,7 @@ namespace Equipo_HJF
             this.multiplicar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.multiplicar.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.multiplicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.multiplicar.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.multiplicar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.multiplicar.Location = new System.Drawing.Point(296, 366);
             this.multiplicar.Name = "multiplicar";
