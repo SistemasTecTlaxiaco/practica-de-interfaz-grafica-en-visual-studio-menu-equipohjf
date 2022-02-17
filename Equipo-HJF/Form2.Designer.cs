@@ -31,11 +31,11 @@ namespace Equipo_HJF
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.btnRestaurar = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnMaximizar = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.PanelMenu = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.igual = new System.Windows.Forms.Button();
             this.BorrarTodo = new System.Windows.Forms.Button();
             this.cero = new System.Windows.Forms.Button();
@@ -61,19 +61,23 @@ namespace Equipo_HJF
             this.cuatro = new System.Windows.Forms.Button();
             this.multiplicar = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.PanelMenu = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.estandar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.Men = new System.Windows.Forms.PictureBox();
+            this.btnRestaurar = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnMaximizar = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.BarraTitulo.SuspendLayout();
+            this.MenuVertical.SuspendLayout();
+            this.PanelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Men)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            this.MenuVertical.SuspendLayout();
-            this.PanelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Men)).BeginInit();
             this.SuspendLayout();
             // 
             // BarraTitulo
@@ -87,75 +91,29 @@ namespace Equipo_HJF
             this.BarraTitulo.Controls.Add(this.btnCerrar);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(2);
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(398, 31);
             this.BarraTitulo.TabIndex = 0;
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
             // 
-            // btnRestaurar
+            // label1
             // 
-            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRestaurar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(339, 6);
-            this.btnRestaurar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(19, 20);
-            this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRestaurar.TabIndex = 3;
-            this.btnRestaurar.TabStop = false;
-            this.btnRestaurar.Visible = false;
-            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(309, 6);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(19, 20);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 2;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // btnMaximizar
-            // 
-            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(339, 6);
-            this.btnMaximizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(19, 20);
-            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximizar.TabIndex = 1;
-            this.btnMaximizar.TabStop = false;
-            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(370, 6);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(19, 20);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 0;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(141, 1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 25);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Calculadora";
             // 
             // MenuVertical
             // 
+            this.MenuVertical.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.MenuVertical.BackColor = System.Drawing.Color.Black;
             this.MenuVertical.Controls.Add(this.PanelMenu);
             this.MenuVertical.Controls.Add(this.textBox1);
@@ -183,15 +141,55 @@ namespace Equipo_HJF
             this.MenuVertical.Controls.Add(this.nueve);
             this.MenuVertical.Controls.Add(this.cuatro);
             this.MenuVertical.Controls.Add(this.multiplicar);
-            this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 31);
-            this.MenuVertical.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MenuVertical.Margin = new System.Windows.Forms.Padding(2);
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(396, 649);
             this.MenuVertical.TabIndex = 1;
             // 
+            // PanelMenu
+            // 
+            this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.PanelMenu.Controls.Add(this.label2);
+            this.PanelMenu.Controls.Add(this.button3);
+            this.PanelMenu.Controls.Add(this.button2);
+            this.PanelMenu.Controls.Add(this.button1);
+            this.PanelMenu.Controls.Add(this.estandar);
+            this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PanelMenu.Location = new System.Drawing.Point(0, 0);
+            this.PanelMenu.Name = "PanelMenu";
+            this.PanelMenu.Size = new System.Drawing.Size(202, 649);
+            this.PanelMenu.TabIndex = 37;
+            this.PanelMenu.Visible = false;
+            this.PanelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelMenu_Paint);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(-1, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(94, 17);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Calculadora";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.BackColor = System.Drawing.Color.Black;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox1.Location = new System.Drawing.Point(3, 19);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(392, 164);
+            this.textBox1.TabIndex = 36;
+            // 
             // igual
             // 
+            this.igual.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.igual.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.igual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.igual.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -204,6 +202,7 @@ namespace Equipo_HJF
             // 
             // BorrarTodo
             // 
+            this.BorrarTodo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BorrarTodo.BackColor = System.Drawing.SystemColors.InfoText;
             this.BorrarTodo.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.BorrarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -217,6 +216,7 @@ namespace Equipo_HJF
             // 
             // cero
             // 
+            this.cero.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cero.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.cero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cero.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -229,6 +229,7 @@ namespace Equipo_HJF
             // 
             // Modulo
             // 
+            this.Modulo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Modulo.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.Modulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Modulo.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -241,6 +242,7 @@ namespace Equipo_HJF
             // 
             // punto
             // 
+            this.punto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.punto.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.punto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.punto.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -253,6 +255,7 @@ namespace Equipo_HJF
             // 
             // Borrar1
             // 
+            this.Borrar1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Borrar1.BackColor = System.Drawing.SystemColors.InfoText;
             this.Borrar1.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.Borrar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -266,6 +269,7 @@ namespace Equipo_HJF
             // 
             // masmenos
             // 
+            this.masmenos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.masmenos.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.masmenos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.masmenos.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -278,6 +282,7 @@ namespace Equipo_HJF
             // 
             // Borrar2
             // 
+            this.Borrar2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Borrar2.BackColor = System.Drawing.SystemColors.InfoText;
             this.Borrar2.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.Borrar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -291,6 +296,7 @@ namespace Equipo_HJF
             // 
             // suma
             // 
+            this.suma.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.suma.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.suma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.suma.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -303,6 +309,7 @@ namespace Equipo_HJF
             // 
             // fraccion
             // 
+            this.fraccion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fraccion.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.fraccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fraccion.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -315,6 +322,7 @@ namespace Equipo_HJF
             // 
             // tres
             // 
+            this.tres.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tres.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.tres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tres.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -327,6 +335,7 @@ namespace Equipo_HJF
             // 
             // exponencial
             // 
+            this.exponencial.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.exponencial.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.exponencial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exponencial.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -339,6 +348,7 @@ namespace Equipo_HJF
             // 
             // dos
             // 
+            this.dos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dos.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.dos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dos.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -351,6 +361,7 @@ namespace Equipo_HJF
             // 
             // raiz
             // 
+            this.raiz.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.raiz.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.raiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.raiz.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -363,6 +374,7 @@ namespace Equipo_HJF
             // 
             // uno
             // 
+            this.uno.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uno.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.uno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uno.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -375,6 +387,7 @@ namespace Equipo_HJF
             // 
             // dividir
             // 
+            this.dividir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dividir.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.dividir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dividir.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -387,6 +400,7 @@ namespace Equipo_HJF
             // 
             // resta
             // 
+            this.resta.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.resta.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.resta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.resta.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -399,6 +413,7 @@ namespace Equipo_HJF
             // 
             // siete
             // 
+            this.siete.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.siete.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.siete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.siete.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -411,6 +426,7 @@ namespace Equipo_HJF
             // 
             // seis
             // 
+            this.seis.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.seis.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.seis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.seis.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -423,6 +439,7 @@ namespace Equipo_HJF
             // 
             // ocho
             // 
+            this.ocho.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ocho.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.ocho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ocho.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -435,6 +452,7 @@ namespace Equipo_HJF
             // 
             // cinco
             // 
+            this.cinco.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cinco.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.cinco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cinco.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -447,6 +465,7 @@ namespace Equipo_HJF
             // 
             // nueve
             // 
+            this.nueve.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.nueve.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.nueve.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nueve.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -459,6 +478,7 @@ namespace Equipo_HJF
             // 
             // cuatro
             // 
+            this.cuatro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cuatro.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.cuatro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cuatro.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -471,6 +491,7 @@ namespace Equipo_HJF
             // 
             // multiplicar
             // 
+            this.multiplicar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.multiplicar.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.multiplicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.multiplicar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
@@ -485,101 +506,177 @@ namespace Equipo_HJF
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.Black;
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(396, 31);
+            this.panelContenedor.Location = new System.Drawing.Point(0, 0);
             this.panelContenedor.Margin = new System.Windows.Forms.Padding(2);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(2, 649);
+            this.panelContenedor.Size = new System.Drawing.Size(398, 680);
             this.panelContenedor.TabIndex = 2;
             // 
-            // textBox1
+            // button3
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Black;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox1.Location = new System.Drawing.Point(3, 19);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(392, 164);
-            this.textBox1.TabIndex = 36;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Snow;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button3.Location = new System.Drawing.Point(2, 223);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(200, 45);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Cálculo de fecha";
+            this.button3.UseVisualStyleBackColor = false;
             // 
-            // PanelMenu
+            // button2
             // 
-            this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.PanelMenu.Controls.Add(this.estandar);
-            this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelMenu.Location = new System.Drawing.Point(0, 0);
-            this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(200, 649);
-            this.PanelMenu.TabIndex = 37;
-            this.PanelMenu.Visible = false;
-            this.PanelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelMenu_Paint);
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Snow;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 172);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(200, 45);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Programador";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Snow;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(0, 121);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 45);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Cientifíca";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // estandar
             // 
-            this.estandar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("estandar.BackgroundImage")));
-            this.estandar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.estandar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.estandar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.estandar.Cursor = System.Windows.Forms.Cursors.PanSW;
             this.estandar.FlatAppearance.BorderSize = 0;
             this.estandar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.estandar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.estandar.ForeColor = System.Drawing.Color.Snow;
-            this.estandar.Image = ((System.Drawing.Image)(resources.GetObject("estandar.Image")));
             this.estandar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.estandar.Location = new System.Drawing.Point(0, 68);
+            this.estandar.Location = new System.Drawing.Point(0, 70);
             this.estandar.Name = "estandar";
             this.estandar.Size = new System.Drawing.Size(200, 45);
             this.estandar.TabIndex = 0;
             this.estandar.Text = "Estándar";
+            this.estandar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.estandar.UseVisualStyleBackColor = false;
             this.estandar.Click += new System.EventHandler(this.estandar_Click);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(141, 1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 25);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Calculadora";
             // 
             // Men
             // 
             this.Men.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.Men.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Men.Dock = System.Windows.Forms.DockStyle.Left;
             this.Men.Image = ((System.Drawing.Image)(resources.GetObject("Men.Image")));
-            this.Men.Location = new System.Drawing.Point(0, 0);
+            this.Men.Location = new System.Drawing.Point(8, 6);
             this.Men.Margin = new System.Windows.Forms.Padding(2);
             this.Men.Name = "Men";
-            this.Men.Size = new System.Drawing.Size(19, 31);
+            this.Men.Size = new System.Drawing.Size(19, 20);
             this.Men.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Men.TabIndex = 5;
             this.Men.TabStop = false;
             this.Men.Click += new System.EventHandler(this.Men_Click);
+            // 
+            // btnRestaurar
+            // 
+            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRestaurar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
+            this.btnRestaurar.Location = new System.Drawing.Point(339, 6);
+            this.btnRestaurar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRestaurar.Name = "btnRestaurar";
+            this.btnRestaurar.Size = new System.Drawing.Size(19, 20);
+            this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnRestaurar.TabIndex = 3;
+            this.btnRestaurar.TabStop = false;
+            this.btnRestaurar.Visible = false;
+            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.Location = new System.Drawing.Point(309, 6);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(19, 20);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 2;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnMaximizar
+            // 
+            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
+            this.btnMaximizar.Location = new System.Drawing.Point(339, 6);
+            this.btnMaximizar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMaximizar.Name = "btnMaximizar";
+            this.btnMaximizar.Size = new System.Drawing.Size(19, 20);
+            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMaximizar.TabIndex = 1;
+            this.btnMaximizar.TabStop = false;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(370, 6);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(19, 20);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(398, 680);
-            this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.MenuVertical);
             this.Controls.Add(this.BarraTitulo);
+            this.Controls.Add(this.panelContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.Text = "Form2";
             this.BarraTitulo.ResumeLayout(false);
             this.BarraTitulo.PerformLayout();
+            this.MenuVertical.ResumeLayout(false);
+            this.MenuVertical.PerformLayout();
+            this.PanelMenu.ResumeLayout(false);
+            this.PanelMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Men)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            this.MenuVertical.ResumeLayout(false);
-            this.MenuVertical.PerformLayout();
-            this.PanelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Men)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -620,7 +717,11 @@ namespace Equipo_HJF
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel PanelMenu;
-        private System.Windows.Forms.Button estandar;
         private System.Windows.Forms.PictureBox Men;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button estandar;
     }
 }

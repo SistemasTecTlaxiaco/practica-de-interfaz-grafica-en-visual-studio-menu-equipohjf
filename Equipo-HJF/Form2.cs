@@ -54,9 +54,19 @@ namespace Equipo_HJF
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        int num = 0;
         private void Men_Click(object sender, EventArgs e)
         {
-            PanelMenu.Visible = true;
+           if(num == 0) { 
+                PanelMenu.Visible = true;
+                num = 1;
+           }
+            else
+            {
+                PanelMenu.Visible = false;
+                num = 0;
+            }
+            
         }
 
         private void PanelMenu_Paint(object sender, PaintEventArgs e)
@@ -67,6 +77,11 @@ namespace Equipo_HJF
         private void estandar_Click(object sender, EventArgs e)
         {
             PanelMenu.Visible = false;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
