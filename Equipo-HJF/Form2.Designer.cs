@@ -44,7 +44,7 @@ namespace Equipo_HJF
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.estandar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.SalidaText = new System.Windows.Forms.TextBox();
             this.igual = new System.Windows.Forms.Button();
             this.BorrarTodo = new System.Windows.Forms.Button();
             this.cero = new System.Windows.Forms.Button();
@@ -191,7 +191,7 @@ namespace Equipo_HJF
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MenuVertical.BackColor = System.Drawing.Color.Black;
             this.MenuVertical.Controls.Add(this.PanelMenu);
-            this.MenuVertical.Controls.Add(this.textBox1);
+            this.MenuVertical.Controls.Add(this.SalidaText);
             this.MenuVertical.Controls.Add(this.igual);
             this.MenuVertical.Controls.Add(this.BorrarTodo);
             this.MenuVertical.Controls.Add(this.cero);
@@ -233,7 +233,7 @@ namespace Equipo_HJF
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(202, 649);
+            this.PanelMenu.Size = new System.Drawing.Size(10, 649);
             this.PanelMenu.TabIndex = 37;
             this.PanelMenu.Visible = false;
             this.PanelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelMenu_Paint);
@@ -244,7 +244,7 @@ namespace Equipo_HJF
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label2.Location = new System.Drawing.Point(-1, 19);
+            this.label2.Location = new System.Drawing.Point(-97, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 17);
             this.label2.TabIndex = 6;
@@ -310,24 +310,26 @@ namespace Equipo_HJF
             this.estandar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.estandar.Location = new System.Drawing.Point(0, 70);
             this.estandar.Name = "estandar";
-            this.estandar.Size = new System.Drawing.Size(200, 45);
+            this.estandar.Size = new System.Drawing.Size(8, 45);
             this.estandar.TabIndex = 0;
             this.estandar.Text = "Estándar";
             this.estandar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.estandar.UseVisualStyleBackColor = false;
             this.estandar.Click += new System.EventHandler(this.estandar_Click);
             // 
-            // textBox1
+            // SalidaText
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BackColor = System.Drawing.Color.Black;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox1.Location = new System.Drawing.Point(3, 19);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(392, 164);
-            this.textBox1.TabIndex = 36;
+            this.SalidaText.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SalidaText.BackColor = System.Drawing.Color.Black;
+            this.SalidaText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SalidaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SalidaText.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.SalidaText.Location = new System.Drawing.Point(3, 19);
+            this.SalidaText.Multiline = true;
+            this.SalidaText.Name = "SalidaText";
+            this.SalidaText.Size = new System.Drawing.Size(392, 164);
+            this.SalidaText.TabIndex = 36;
+            this.SalidaText.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // igual
             // 
@@ -342,6 +344,7 @@ namespace Equipo_HJF
             this.igual.TabIndex = 34;
             this.igual.Text = "=";
             this.igual.UseVisualStyleBackColor = true;
+            this.igual.Click += new System.EventHandler(this.igual_Click);
             // 
             // BorrarTodo
             // 
@@ -369,6 +372,7 @@ namespace Equipo_HJF
             this.cero.TabIndex = 33;
             this.cero.Text = "0";
             this.cero.UseVisualStyleBackColor = true;
+            this.cero.Click += new System.EventHandler(this.cero_Click);
             // 
             // Modulo
             // 
@@ -396,6 +400,7 @@ namespace Equipo_HJF
             this.punto.TabIndex = 32;
             this.punto.Text = ".";
             this.punto.UseVisualStyleBackColor = true;
+            this.punto.Click += new System.EventHandler(this.punto_Click);
             // 
             // Borrar1
             // 
@@ -411,6 +416,7 @@ namespace Equipo_HJF
             this.Borrar1.TabIndex = 12;
             this.Borrar1.Text = "C";
             this.Borrar1.UseVisualStyleBackColor = false;
+            this.Borrar1.Click += new System.EventHandler(this.Borrar1_Click);
             // 
             // masmenos
             // 
@@ -439,6 +445,7 @@ namespace Equipo_HJF
             this.Borrar2.TabIndex = 13;
             this.Borrar2.Text = "BORRAR";
             this.Borrar2.UseVisualStyleBackColor = false;
+            this.Borrar2.Click += new System.EventHandler(this.Borrar2_Click);
             // 
             // suma
             // 
@@ -480,6 +487,7 @@ namespace Equipo_HJF
             this.tres.TabIndex = 29;
             this.tres.Text = "3";
             this.tres.UseVisualStyleBackColor = true;
+            this.tres.Click += new System.EventHandler(this.tres_Click);
             // 
             // exponencial
             // 
@@ -506,6 +514,7 @@ namespace Equipo_HJF
             this.dos.TabIndex = 28;
             this.dos.Text = "2";
             this.dos.UseVisualStyleBackColor = true;
+            this.dos.Click += new System.EventHandler(this.dos_Click);
             // 
             // raiz
             // 
@@ -533,6 +542,7 @@ namespace Equipo_HJF
             this.uno.TabIndex = 27;
             this.uno.Text = "1";
             this.uno.UseVisualStyleBackColor = true;
+            this.uno.Click += new System.EventHandler(this.uno_Click);
             // 
             // dividir
             // 
@@ -574,6 +584,7 @@ namespace Equipo_HJF
             this.siete.TabIndex = 18;
             this.siete.Text = "7";
             this.siete.UseVisualStyleBackColor = true;
+            this.siete.Click += new System.EventHandler(this.siete_Click);
             // 
             // seis
             // 
@@ -602,6 +613,7 @@ namespace Equipo_HJF
             this.ocho.TabIndex = 19;
             this.ocho.Text = "8";
             this.ocho.UseVisualStyleBackColor = true;
+            this.ocho.Click += new System.EventHandler(this.ocho_Click);
             // 
             // cinco
             // 
@@ -615,6 +627,7 @@ namespace Equipo_HJF
             this.cinco.TabIndex = 23;
             this.cinco.Text = "5";
             this.cinco.UseVisualStyleBackColor = true;
+            this.cinco.Click += new System.EventHandler(this.cinco_Click);
             // 
             // nueve
             // 
@@ -629,6 +642,7 @@ namespace Equipo_HJF
             this.nueve.TabIndex = 20;
             this.nueve.Text = "9";
             this.nueve.UseVisualStyleBackColor = true;
+            this.nueve.Click += new System.EventHandler(this.nueve_Click);
             // 
             // cuatro
             // 
@@ -642,6 +656,7 @@ namespace Equipo_HJF
             this.cuatro.TabIndex = 11;
             this.cuatro.Text = "4";
             this.cuatro.UseVisualStyleBackColor = true;
+            this.cuatro.Click += new System.EventHandler(this.cuatro_Click);
             // 
             // multiplicar
             // 
@@ -726,7 +741,7 @@ namespace Equipo_HJF
         private System.Windows.Forms.Button nueve;
         private System.Windows.Forms.Button cuatro;
         private System.Windows.Forms.Button multiplicar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox SalidaText;
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel PanelMenu;

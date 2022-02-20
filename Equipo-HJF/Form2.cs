@@ -13,6 +13,8 @@ namespace Equipo_HJF
 {
     public partial class Form2 : Form
     {
+        public string caracteresSalida;
+
         public Form2()
         {
             InitializeComponent();
@@ -57,21 +59,21 @@ namespace Equipo_HJF
         int num = 0;
         private void Men_Click(object sender, EventArgs e)
         {
-           if(num == 0) { 
+            if (num == 0) {
                 PanelMenu.Visible = true;
                 num = 1;
-           }
+            }
             else
             {
                 PanelMenu.Visible = false;
                 num = 0;
             }
-            
+
         }
 
         private void PanelMenu_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void estandar_Click(object sender, EventArgs e)
@@ -86,7 +88,114 @@ namespace Equipo_HJF
 
         private void seis_Click(object sender, EventArgs e)
         {
+            Salida("6");
+        }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void nueve_Click(object sender, EventArgs e)
+        {
+            Salida("9");
+        }
+
+        string Salida(string caracteresS)
+        {
+            SalidaText.Text += caracteresS;
+            return caracteresS;
+        }
+
+        private void tres_Click(object sender, EventArgs e)
+        {
+            Salida("3");
+        }
+
+        private void ocho_Click(object sender, EventArgs e)
+        {
+            Salida("8");
+        }
+
+        private void cinco_Click(object sender, EventArgs e)
+        {
+            Salida("5");
+        }
+
+        private void dos_Click(object sender, EventArgs e)
+        {
+            Salida("2");
+        }
+
+        private void cero_Click(object sender, EventArgs e)
+        {
+            Salida("0");
+        }
+
+        private void siete_Click(object sender, EventArgs e)
+        {
+            Salida("7");
+        }
+
+        private void cuatro_Click(object sender, EventArgs e)
+        {
+            Salida("4");
+        }
+
+        private void uno_Click(object sender, EventArgs e)
+        {
+            Salida("1");
+        }
+
+        private void igual_Click(object sender, EventArgs e)
+        {
+            Total();
+        }
+
+        float Total()
+        {
+            SalidaText.Text = "0";
+            return 0;
+        }
+
+        private void Borrar1_Click(object sender, EventArgs e)
+        {
+            BorrarTodoCalculadora();
+        }
+
+        void BorrarTodoCalculadora()
+        {
+            SalidaText.Text = "";
+            caracteresSalida = "";
+        }
+
+        private void Borrar2_Click(object sender, EventArgs e)
+        {
+            BorrarUno();
+        }
+
+        void BorrarUno()
+        {
+            SalidaText.Text = caracteresSalida = cadena(SalidaText.Text);
+        }
+
+        string cadena(string caracteresS)
+        {
+            string salida = "";
+            if (caracteresS.Length > 0)
+            {
+                salida = caracteresS.Substring(0, caracteresS.Length - 1);
+            }
+            return salida;
+        }
+
+        private void punto_Click(object sender, EventArgs e)
+        {
+            if(!SalidaText.Text.Contains("."))
+            { 
+                Salida("."); 
+            }
+            
         }
     }
 }
