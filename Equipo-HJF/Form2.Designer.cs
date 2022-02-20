@@ -233,10 +233,11 @@ namespace Equipo_HJF
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(10, 649);
+            this.PanelMenu.Size = new System.Drawing.Size(196, 649);
             this.PanelMenu.TabIndex = 37;
             this.PanelMenu.Visible = false;
             this.PanelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelMenu_Paint);
+            this.PanelMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelMenu_Paint);
             // 
             // label2
             // 
@@ -244,7 +245,7 @@ namespace Equipo_HJF
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label2.Location = new System.Drawing.Point(-97, 19);
+            this.label2.Location = new System.Drawing.Point(39, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 17);
             this.label2.TabIndex = 6;
@@ -310,7 +311,7 @@ namespace Equipo_HJF
             this.estandar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.estandar.Location = new System.Drawing.Point(0, 70);
             this.estandar.Name = "estandar";
-            this.estandar.Size = new System.Drawing.Size(8, 45);
+            this.estandar.Size = new System.Drawing.Size(194, 45);
             this.estandar.TabIndex = 0;
             this.estandar.Text = "Estándar";
             this.estandar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -386,6 +387,7 @@ namespace Equipo_HJF
             this.Modulo.TabIndex = 22;
             this.Modulo.Text = "%";
             this.Modulo.UseVisualStyleBackColor = true;
+            this.Modulo.Click += new System.EventHandler(this.Modulo_Click);
             // 
             // punto
             // 
@@ -460,6 +462,7 @@ namespace Equipo_HJF
             this.suma.TabIndex = 30;
             this.suma.Text = "+";
             this.suma.UseVisualStyleBackColor = true;
+            this.suma.Click += new System.EventHandler(this.suma_Click);
             // 
             // fraccion
             // 
@@ -557,6 +560,7 @@ namespace Equipo_HJF
             this.dividir.TabIndex = 17;
             this.dividir.Text = "/";
             this.dividir.UseVisualStyleBackColor = true;
+            this.dividir.Click += new System.EventHandler(this.dividir_Click);
             // 
             // resta
             // 
@@ -571,6 +575,7 @@ namespace Equipo_HJF
             this.resta.TabIndex = 26;
             this.resta.Text = "-";
             this.resta.UseVisualStyleBackColor = true;
+            this.resta.Click += new System.EventHandler(this.resta_Click);
             // 
             // siete
             // 
@@ -671,6 +676,7 @@ namespace Equipo_HJF
             this.multiplicar.TabIndex = 21;
             this.multiplicar.Text = "X";
             this.multiplicar.UseVisualStyleBackColor = true;
+            this.multiplicar.Click += new System.EventHandler(this.multiplicar_Click);
             // 
             // panelContenedor
             // 

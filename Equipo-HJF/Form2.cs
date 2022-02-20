@@ -59,7 +59,8 @@ namespace Equipo_HJF
         int num = 0;
         private void Men_Click(object sender, EventArgs e)
         {
-            if (num == 0) {
+            if (num == 0)
+            {
                 PanelMenu.Visible = true;
                 num = 1;
             }
@@ -68,12 +69,10 @@ namespace Equipo_HJF
                 PanelMenu.Visible = false;
                 num = 0;
             }
-
         }
-
-        private void PanelMenu_Paint(object sender, PaintEventArgs e)
+        private void PanelMenu_Paint_1(object sender, PaintEventArgs e)
         {
-
+             
         }
 
         private void estandar_Click(object sender, EventArgs e)
@@ -192,10 +191,59 @@ namespace Equipo_HJF
         private void punto_Click(object sender, EventArgs e)
         {
             if(!SalidaText.Text.Contains("."))
-            { 
-                Salida("."); 
+            {
+                comprobarUltimo(".");
             }
             
+        }
+
+        private void Modulo_Click(object sender, EventArgs e)
+        {
+            comprobarUltimo("%");
+        }
+
+        private void dividir_Click(object sender, EventArgs e)
+        {
+            comprobarUltimo("/");
+        }
+
+        void comprobarUltimo(string dig)
+        {
+            string ultimo = SalidaText.Text.Substring(SalidaText.Text.Length - 1);
+            if (ultimo != "/" && ultimo != "+" && ultimo != "*" && ultimo != "-" && ultimo != ".")
+            {
+                Salida(dig);
+            }
+        }
+
+        private void resta_Click(object sender, EventArgs e)
+        {
+            comprobarUltimo("-");
+        }
+
+        private void suma_Click(object sender, EventArgs e)
+        {
+            comprobarUltimo("+");
+        }
+
+        private void PanelMenu_Paint(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        private void PanelMenu_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void PanelMenu_Paint(object sender, MouseEventArgs e)
+        {
+        }
+
+        private void multiplicar_Click(object sender, EventArgs e)
+        {
+            comprobarUltimo("*");
         }
     }
 }
