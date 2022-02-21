@@ -232,9 +232,6 @@ namespace Equipo_HJF
             int j = 0;
             string izquierda = "", derecha = "", almacenar = "", sub = "";
             
-
-            string izquierda = "", derecha = "", almacenar = "" sub = "";
-
             resultado = resultado.Remove(i, 1);//se elimina el simbolo
             
             for (j = i - 1; j >= 0; j--)//se recogen datos de derecha a izquiertda del simbolo
