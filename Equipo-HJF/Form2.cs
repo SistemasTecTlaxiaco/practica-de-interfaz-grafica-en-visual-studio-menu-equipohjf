@@ -230,6 +230,8 @@ namespace Equipo_HJF
         string reducir(string resultado, int i, string OperacionArealizar)
         {
             int j = 0;
+            string izquierda = "", derecha = "", almacenar = "", sub = "";
+            
 
             string izquierda = "", derecha = "", almacenar = "" sub = "";
 
@@ -344,6 +346,16 @@ namespace Equipo_HJF
                     Salida(dig);//se envia a la salida
                 }
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
