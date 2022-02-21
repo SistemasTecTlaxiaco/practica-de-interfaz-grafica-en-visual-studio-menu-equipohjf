@@ -184,7 +184,10 @@ namespace Equipo_HJF
                     if (simbolo == "*")
                     {
                         resultado = reducir(resultado, i, "multiplicacion");
-                        //break;//evitar eliminar mas de un simbolo "*"
+                        if (resultado.Substring(0, 1) != "-")//
+                        {
+                            break;//evitar eliminar mas de un simbolo "*"
+                        }
                     }
                 }
 
@@ -200,8 +203,8 @@ namespace Equipo_HJF
                     }
                     else if (simbolo == "-")
                     {
-                        resultado = reducir(resultado, i, "resta");
-                        //break;//evitar eliminar mas de un simbolo "*"
+                        resultado = reducir(resultado, i, "resta");//i mo hay ,as simbolos
+                        break;//evitar eliminar mas de un simbolo "*"
                     }
                 }
              }
@@ -216,7 +219,7 @@ namespace Equipo_HJF
             { 
                 //posicion, cantidad
                 simbolo = resultado.Substring(i, 1);
-                if (simbolo == "/" || simbolo == "*" || simbolo == "-" || simbolo == "+")
+                if (simbolo == "/" || simbolo == "*" || (simbolo == "-" && resultado.Substring(0, 1) != "-") || simbolo == "+")
                 {
                     existeSimbolo = true;
                     break;
@@ -228,19 +231,20 @@ namespace Equipo_HJF
         string reducir(string resultado, int i, string OperacionArealizar)
         {
             int j = 0;
-            string izquierda = "", derecha = "", almacenar = "", sub = "";
+            string izquierda = "", derecha = "", almacenar = "";
 
             resultado = resultado.Remove(i, 1);//se elimina el simbolo
 
             for (j = i - 1; j >= 0; j--)//se recogen datos de derecha a izquiertda del simbolo
             {
-                if (resultado.Substring(j, 1) == "+" || resultado.Substring(j, 1) == "-" || resultado.Substring(j, 1) == "*" || resultado.Substring(j, 1) == "/")
+                if (resultado.Substring(j, 1) == "+" || resultado.Substring(j, 1) == "-" || resultado.Substring(j, 1) == "*" || resultado.Substring(j, 1) == "/" )
                 {
                     break;//Salir si hay un simbolo
                 }
                 almacenar += resultado.Substring(j, 1);
                 resultado = resultado.Remove(j, 1);
             }
+            
 
             for (int k = almacenar.Length - 1; k >= 0; k--)//pasarlo en orden
             {
@@ -251,10 +255,11 @@ namespace Equipo_HJF
             //------------------------------------Izquierda a derecha--------------------------------------------------------------
             for (int l = j + 1; l < resultado.Length; l++)//se recogen datos de derecha a izquiertda del simbolo
             {
-                if (resultado.Substring(l, 1) == "+" || resultado.Substring(l, 1) == "-" || resultado.Substring(l, 1) == "*" || resultado.Substring(l, 1) == "/")
+                /*if (resultado.Substring(l, 1) == "+" || resultado.Substring(l, 1) == "-" || resultado.Substring(l, 1) == "*" || resultado.Substring(l, 1) == "/")
                 {
                     break;//Salir si hay un simbolo
-                }
+                }*/
+                Console.WriteLine("//"+derecha);
                 derecha += resultado.Substring(l, 1);
                 resultado = resultado.Remove(l, 1);
                 l = l - 1;
@@ -276,14 +281,15 @@ namespace Equipo_HJF
                 }
                 if (OperacionArealizar == "resta")
                 {
+                    Console.WriteLine("izquierda: " + izquierda);
+                    Console.WriteLine("derecha: " + derecha);
+
                     subtotal = (double.Parse(izquierda) - double.Parse(derecha));
+                    Console.WriteLine("subtotal: " + subtotal);
                 }
             }
 
-            
-
-            sub = subtotal.ToString();
-            return resultado.Insert(j + 1, sub);
+            return resultado.Insert(j + 1, subtotal.ToString());
         }
 
         private void Borrar1_Click(object sender, EventArgs e)
@@ -312,14 +318,14 @@ namespace Equipo_HJF
             string salida = "";
             if (caracteresS.Length > 0)
             {
-                salida = caracteresS.Substring(0, caracteresS.Length - 1);//borrar el ultimo caracter
+                salida = caracteresS.Substring(caracteresS.Length - 1);//borrar el ultimo caracter
             }
             return salida;
         }
 
         private void punto_Click(object sender, EventArgs e)
         {
-            if(!SalidaText.Text.Contains("."))
+            if(!SalidaText.Text.Contains("."))//mientras no contenga el punto
             {
                 comprobarUltimo(".");
             }
@@ -329,10 +335,14 @@ namespace Equipo_HJF
 
         void comprobarUltimo(string dig)
         {
-            string ultimo = SalidaText.Text.Substring(SalidaText.Text.Length - 1);//tomar el ultimo valor
-            if (ultimo != "/" && ultimo != "+" && ultimo != "*" && ultimo != "-" && ultimo != ".")
+            //posicion, cantidad
+            if (SalidaText.Text.Length != 0)
             {
-                Salida(dig);//se envia a la salida
+                string ultimo = SalidaText.Text.Substring(SalidaText.Text.Length - 1);//tomar el ultimo valor
+                if (ultimo != "/" && ultimo != "+" && ultimo != "*" && ultimo != "-" && ultimo != ".")//comprobar que no se repita
+                {
+                    Salida(dig);//se envia a la salida
+                }
             }
         }
     }
