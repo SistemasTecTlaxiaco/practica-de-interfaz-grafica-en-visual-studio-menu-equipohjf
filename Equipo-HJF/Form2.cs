@@ -151,14 +151,16 @@ namespace Equipo_HJF
 
         private void igual_Click(object sender, EventArgs e)
         {
-            SalidaText.Text = Operacion(SalidaText.Text);
+            if (ValidarUltimo())//comprobar que no se repita
+            {
+                SalidaText.Text = Operacion(SalidaText.Text);
+            }
         }
 
         String Operacion(string resultado)
         {
            while (ComprobarNoSimbolos(resultado))
            {
-                string simbolo = "";
                 int i = 0;//almacenar la posicion donde se encontro el simbolo
                 for (i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
                 {
@@ -311,12 +313,24 @@ namespace Equipo_HJF
         {
             if (SalidaText.Text.Length != 0)
             {
-                string ultimo = SalidaText.Text.Substring(SalidaText.Text.Length - 1);//tomar el ultimo valor
-                if (ultimo != "/" && ultimo != "+" && ultimo != "*" && ultimo != "-" && ultimo != ".")//comprobar que no se repita
+                if (ValidarUltimo())//comprobar que no se repita
                 {
                     Salida(dig);//se envia a la salida
                 }
             }
+        }
+        bool ValidarUltimo()
+        {
+            bool correcto = false;
+            string ultimo = SalidaText.Text.Substring(SalidaText.Text.Length - 1);//tomar el ultimo valor
+            if (ultimo != "/" && ultimo != "+" && ultimo != "*" && ultimo != "-" && ultimo != ".")//comprobar que no se repita
+            {
+                correcto = true;
+            }else
+            {
+                Console.WriteLine("Error en la escritura");
+            }
+            return correcto;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
