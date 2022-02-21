@@ -162,59 +162,106 @@ namespace Equipo_HJF
             //   *
             //   -  +   la mas acercada a la izquierda
             //i = posicion
-            string simbolo = "";
-            int i = 0, j = 0;
-            string dividendo = "", divisor = "", almacenar ="";
-            for (i = 0; i <= resultado.Length-1 ; i++)//recorrer toda la cadena
+            return Operacion(resultado);
+
+
+        }
+
+        String Operacion(string resultado)
+        {
+                string simbolo = "";
+            
+            // Console.WriteLine(ComprobarNoSimbolos(resultado));
+            int i = 0;//almacenar la posicion donde se encontro el simbolo
+            for (i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
             {
                 //posicion, cantidad
-                simbolo =  resultado.Substring(i, 1);
-                if(simbolo == "/")
+                simbolo = resultado.Substring(i, 1);
+                if (simbolo == "/")
                 {
-                    resultado = resultado.Remove(i, 1);//se elimina el simbolo
-
-                    for (j = i - 1; j > 0; j--)//se recogen datos de derecha a izquiertda del simbolo
-                    {
-                        if(resultado.Substring(j, 1) == "+" || resultado.Substring(j, 1) == "-" || resultado.Substring(j, 1) == "*" || resultado.Substring(j, 1) == "/")
-                        {
-                            break;//Salir si hay un simbolo
-                        }
-                        almacenar += resultado.Substring(j, 1);
-                        resultado = resultado.Remove(j, 1);
-                    }
-
-                    
-
-                    for (int k = almacenar.Length -1 ; k >= 0; k--)//pasarlo en orden
-                    {
-                        dividendo += almacenar.Substring(k, 1);
-                        almacenar = almacenar.Remove(k, 1);
-                    }
-
-                    //------------------------------------Izquierda a derecha--------------------------------------------------------------
-                    for (int l = j + 1; l < resultado.Length; l++)//se recogen datos de derecha a izquiertda del simbolo
-                    {
-                        if (resultado.Substring(l, 1) == "+" || resultado.Substring(l, 1) == "-" || resultado.Substring(l, 1) == "*" || resultado.Substring(l, 1) == "/")
-                        {
-                            break;//Salir si hay un simbolo
-                        }
-                        Console.WriteLine("recorre:  " + l);
-                        divisor += resultado.Substring(l, 1);
-                        resultado = resultado.Remove(l, 1);
-                        l = l - 1;
-                    }
-                    //----------------------------------------------------------------------------------------------
-
+                    resultado = reducir(resultado, i, "division");
                     break;//evitar eliminar mas de un simbolo "/"
-                }                
+                }else if (simbolo == "*")
+                {
+                    resultado = reducir(resultado, i, "multiplicacion");
+                    break;//evitar eliminar mas de un simbolo "*"
+                }
+            }
+            return resultado;
+        }
+
+        bool ComprobarNoSimbolos(string resultado)
+        {
+            bool existeSimbolo = false;
+            string simbolo = "";
+            for (int i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
+            {
+                
+                //posicion, cantidad
+                simbolo = resultado.Substring(i, 1);
+                if (simbolo == "/" || simbolo == "*" || simbolo == "-" || simbolo == "+")
+                {
+                    existeSimbolo = true;
+                    break;
+                }
+            }
+            return existeSimbolo;
+        }
+
+        string reducir(string resultado, int i, string OperacionArealizar)
+        {
+            int j = 0;
+            string dividendo = "", divisor = "", almacenar = "", sub = "";
+
+            resultado = resultado.Remove(i, 1);//se elimina el simbolo
+
+            Console.WriteLine("i: " + i);
+            for (j = i - 1; j >= 0; j--)//se recogen datos de derecha a izquiertda del simbolo
+            {
+                if (resultado.Substring(j, 1) == "+" || resultado.Substring(j, 1) == "-" || resultado.Substring(j, 1) == "*" || resultado.Substring(j, 1) == "/")
+                {
+                    break;//Salir si hay un simbolo
+                }
+                almacenar += resultado.Substring(j, 1);
+                resultado = resultado.Remove(j, 1);
             }
 
-            float subtotal = (float.Parse(dividendo) / float.Parse(divisor));
+            Console.WriteLine("/////--." + almacenar);
 
-            string sub = subtotal.ToString();
-            
-            return resultado.Insert(j + 1, sub);//resultado
+            for (int k = almacenar.Length - 1; k >= 0; k--)//pasarlo en orden
+            {
+                dividendo += almacenar.Substring(k, 1);
+                almacenar = almacenar.Remove(k, 1);
+            }
 
+            //------------------------------------Izquierda a derecha--------------------------------------------------------------
+            for (int l = j + 1; l < resultado.Length; l++)//se recogen datos de derecha a izquiertda del simbolo
+            {
+                if (resultado.Substring(l, 1) == "+" || resultado.Substring(l, 1) == "-" || resultado.Substring(l, 1) == "*" || resultado.Substring(l, 1) == "/")
+                {
+                    break;//Salir si hay un simbolo
+                }
+                Console.WriteLine("recorre:  " + l);
+                divisor += resultado.Substring(l, 1);
+                resultado = resultado.Remove(l, 1);
+                l = l - 1;
+            }
+            //----------------------------------------------------------------------------------------------
+            float subtotal = 0;
+            if (OperacionArealizar == "division")
+            {
+                Console.WriteLine("dividendo:  " + dividendo);
+                Console.WriteLine("divisor:  " + divisor);
+                subtotal = (float.Parse(dividendo) / float.Parse(divisor));
+            }else if (OperacionArealizar == "multiplicacion")
+            {
+                Console.WriteLine("dividendo:  " + dividendo);
+                Console.WriteLine("divisor:  " + divisor);
+                subtotal = (float.Parse(dividendo) * float.Parse(divisor));
+            }
+
+            sub = subtotal.ToString();
+            return resultado.Insert(j + 1, sub);
         }
 
         
