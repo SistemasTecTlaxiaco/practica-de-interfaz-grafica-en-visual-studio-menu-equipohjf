@@ -230,13 +230,9 @@ namespace Equipo_HJF
         string reducir(string resultado, int i, string OperacionArealizar)
         {
             int j = 0;
-<<<<<<< HEAD
+
             string izquierda = "", derecha = "", almacenar = "" sub = "";
 
-=======
-            //string izquierda = "", derecha = "", almacenar = "", sub = "";+1
-            
->>>>>>> adede6f05e87ddee79344ad22ae5906eb1e52296
             resultado = resultado.Remove(i, 1);//se elimina el simbolo
             
             for (j = i - 1; j >= 0; j--)//se recogen datos de derecha a izquiertda del simbolo
