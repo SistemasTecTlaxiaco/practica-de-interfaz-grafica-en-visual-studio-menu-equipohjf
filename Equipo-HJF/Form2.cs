@@ -102,7 +102,7 @@ namespace Equipo_HJF
 
         string Salida(string caracteresS)
         {
-            SalidaText.Text += caracteresS;
+            SalidaText.Text += caracteresS;//le gregamos la ultima salida a la cadena
             return caracteresS;
         }
 
@@ -151,11 +151,73 @@ namespace Equipo_HJF
             Total();
         }
 
-        float Total()
+        void Total()
         {
-            SalidaText.Text = "0";
-            return 0;
+            SalidaText.Text = prioridad(SalidaText.Text);
         }
+
+        string prioridad(string resultado)
+        {
+            //   /
+            //   *
+            //   -  +   la mas acercada a la izquierda
+            //i = posicion
+            string simbolo = "";
+            int i = 0, j = 0;
+            string dividendo = "", divisor = "", almacenar ="";
+            for (i = 0; i <= resultado.Length-1 ; i++)//recorrer toda la cadena
+            {
+                //posicion, cantidad
+                simbolo =  resultado.Substring(i, 1);
+                if(simbolo == "/")
+                {
+                    resultado = resultado.Remove(i, 1);//se elimina el simbolo
+
+                    for (j = i - 1; j > 0; j--)//se recogen datos de derecha a izquiertda del simbolo
+                    {
+                        if(resultado.Substring(j, 1) == "+" || resultado.Substring(j, 1) == "-" || resultado.Substring(j, 1) == "*" || resultado.Substring(j, 1) == "/")
+                        {
+                            break;//Salir si hay un simbolo
+                        }
+                        almacenar += resultado.Substring(j, 1);
+                        resultado = resultado.Remove(j, 1);
+                    }
+
+                    
+
+                    for (int k = almacenar.Length -1 ; k >= 0; k--)//pasarlo en orden
+                    {
+                        dividendo += almacenar.Substring(k, 1);
+                        almacenar = almacenar.Remove(k, 1);
+                    }
+
+                    //------------------------------------Izquierda a derecha--------------------------------------------------------------
+                    for (int l = j + 1; l < resultado.Length; l++)//se recogen datos de derecha a izquiertda del simbolo
+                    {
+                        if (resultado.Substring(l, 1) == "+" || resultado.Substring(l, 1) == "-" || resultado.Substring(l, 1) == "*" || resultado.Substring(l, 1) == "/")
+                        {
+                            break;//Salir si hay un simbolo
+                        }
+                        Console.WriteLine("recorre:  " + l);
+                        divisor += resultado.Substring(l, 1);
+                        resultado = resultado.Remove(l, 1);
+                        l = l - 1;
+                    }
+                    //----------------------------------------------------------------------------------------------
+
+                    break;//evitar eliminar mas de un simbolo "/"
+                }                
+            }
+
+            float subtotal = (float.Parse(dividendo) / float.Parse(divisor));
+
+            string sub = subtotal.ToString();
+            
+            return resultado.Insert(j + 1, sub);//resultado
+
+        }
+
+        
 
         private void Borrar1_Click(object sender, EventArgs e)
         {
@@ -183,7 +245,7 @@ namespace Equipo_HJF
             string salida = "";
             if (caracteresS.Length > 0)
             {
-                salida = caracteresS.Substring(0, caracteresS.Length - 1);
+                salida = caracteresS.Substring(0, caracteresS.Length - 1);//borrar el ultimo caracter
             }
             return salida;
         }
@@ -209,10 +271,10 @@ namespace Equipo_HJF
 
         void comprobarUltimo(string dig)
         {
-            string ultimo = SalidaText.Text.Substring(SalidaText.Text.Length - 1);
+            string ultimo = SalidaText.Text.Substring(SalidaText.Text.Length - 1);//tomar el ultimo valor
             if (ultimo != "/" && ultimo != "+" && ultimo != "*" && ultimo != "-" && ultimo != ".")
             {
-                Salida(dig);
+                Salida(dig);//se envia a la salida
             }
         }
 
