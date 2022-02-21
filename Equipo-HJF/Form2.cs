@@ -163,6 +163,7 @@ namespace Equipo_HJF
             {
                 string simbolo = "";
                 int i = 0;//almacenar la posicion donde se encontro el simbolo
+                
                 for (i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
                 {
                     //posicion, cantidad
@@ -216,9 +217,9 @@ namespace Equipo_HJF
         {
             int j = 0;
             string izquierda = "", derecha = "", almacenar = "", sub = "";
-
+            
             resultado = resultado.Remove(i, 1);//se elimina el simbolo
-
+            
             for (j = i - 1; j >= 0; j--)//se recogen datos de derecha a izquiertda del simbolo
             {
                 if (resultado.Substring(j, 1) == "+" || resultado.Substring(j, 1) == "-" || resultado.Substring(j, 1) == "*" || resultado.Substring(j, 1) == "/")
@@ -317,6 +318,16 @@ namespace Equipo_HJF
             {
                 Salida(dig);//se envia a la salida
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
