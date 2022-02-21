@@ -13,8 +13,6 @@ namespace Equipo_HJF
 {
     public partial class Form2 : Form
     {
-        public string caracteresSalida;
-
         public Form2()
         {
             InitializeComponent();
@@ -151,7 +149,6 @@ namespace Equipo_HJF
             return caracteresS;
         }
 
-
         private void igual_Click(object sender, EventArgs e)
         {
             SalidaText.Text = Operacion(SalidaText.Text);
@@ -159,51 +156,36 @@ namespace Equipo_HJF
 
         String Operacion(string resultado)
         {
-            while (ComprobarNoSimbolos(resultado))
-            {
+           while (ComprobarNoSimbolos(resultado))
+           {
                 string simbolo = "";
                 int i = 0;//almacenar la posicion donde se encontro el simbolo
                 for (i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
                 {
-                    //posicion, cantidad
-                    simbolo = resultado.Substring(i, 1);
-                    Console.WriteLine("position"+simbolo);
-                    if (simbolo == "/")
+                    if (resultado.Substring(i, 1) == "/")
                     {
                         resultado = reducir(resultado, i, "division");
-                        //break;//evitar eliminar mas de un simbolo "/"
                     }
                 }
 
                 for (i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
                 {
-                    //posicion, cantidad
-                    simbolo = resultado.Substring(i, 1);
-                    Console.WriteLine("position" + simbolo);
-                    if (simbolo == "*")
+                    if (resultado.Substring(i, 1) == "*")
                     {
                         resultado = reducir(resultado, i, "multiplicacion");
-                        if (resultado.Substring(0, 1) != "-")//
-                        {
-                            break;//evitar eliminar mas de un simbolo "*"
-                        }
                     }
                 }
 
             for (i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
                 {
-                    //posicion, cantidad
-                    simbolo = resultado.Substring(i, 1);
-                    Console.WriteLine("position" + simbolo);
-                    if (simbolo == "+")
+                    if (resultado.Substring(i, 1) == "+")
                     {
                         resultado = reducir(resultado, i, "suma");
-                        //break;//evitar eliminar mas de un simbolo "/"
                     }
-                    else if (simbolo == "-")
+                    else if (resultado.Substring(i, 1) == "-")
                     {
                         resultado = reducir(resultado, i, "resta");//i mo hay ,as simbolos
-                        break;//evitar eliminar mas de un simbolo "*"
+                        //break;//evitar eliminar mas de un simbolo "*"
                     }
                 }
              }
@@ -213,11 +195,10 @@ namespace Equipo_HJF
         bool ComprobarNoSimbolos(string resultado)
         {
             bool existeSimbolo = false;
-            string simbolo = "";
             for (int i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
             { 
                 //posicion, cantidad
-                simbolo = resultado.Substring(i, 1);
+                string simbolo = resultado.Substring(i, 1);
                 if (simbolo == "/" || simbolo == "*" || (simbolo == "-" && resultado.Substring(0, 1) != "-") || simbolo == "+")
                 {
                     existeSimbolo = true;
@@ -230,7 +211,7 @@ namespace Equipo_HJF
         string reducir(string resultado, int i, string OperacionArealizar)
         {
             int j = 0;
-            string izquierda = "", derecha = "", almacenar = "", sub = "";
+            string izquierda = "", derecha = "", almacenar = "";
             
             resultado = resultado.Remove(i, 1);//se elimina el simbolo
             
@@ -244,7 +225,6 @@ namespace Equipo_HJF
                 resultado = resultado.Remove(j, 1);
             }
             
-
             for (int k = almacenar.Length - 1; k >= 0; k--)//pasarlo en orden
             {
                 izquierda += almacenar.Substring(k, 1);
@@ -258,7 +238,6 @@ namespace Equipo_HJF
                 {
                     break;//Salir si hay un simbolo
                 }
-                Console.WriteLine("//"+derecha);
                 derecha += resultado.Substring(l, 1);
                 resultado = resultado.Remove(l, 1);
                 l = l - 1;
@@ -282,7 +261,6 @@ namespace Equipo_HJF
                 {
                     Console.WriteLine("izquierda: " + izquierda);
                     Console.WriteLine("derecha: " + derecha);
-
                     subtotal = (double.Parse(izquierda) - double.Parse(derecha));
                     Console.WriteLine("subtotal: " + subtotal);
                 }
@@ -299,7 +277,6 @@ namespace Equipo_HJF
         void BorrarTodoCalculadora()
         {
             SalidaText.Text = "";
-            caracteresSalida = "";
         }
 
         private void Borrar2_Click(object sender, EventArgs e)
@@ -309,7 +286,7 @@ namespace Equipo_HJF
 
         void BorrarUno()
         {
-            SalidaText.Text = caracteresSalida = cadena(SalidaText.Text);
+            SalidaText.Text = cadena(SalidaText.Text);
         }
 
         string cadena(string caracteresS)
@@ -317,7 +294,7 @@ namespace Equipo_HJF
             string salida = "";
             if (caracteresS.Length > 0)
             {
-                salida = caracteresS.Substring(caracteresS.Length - 1);//borrar el ultimo caracter
+                salida = caracteresS.Remove(caracteresS.Length - 1, 1);//borrar el ultimo caracter
             }
             return salida;
         }
@@ -330,11 +307,8 @@ namespace Equipo_HJF
             }
         }
 
-        
-
         void comprobarUltimo(string dig)
         {
-            //posicion, cantidad
             if (SalidaText.Text.Length != 0)
             {
                 string ultimo = SalidaText.Text.Substring(SalidaText.Text.Length - 1);//tomar el ultimo valor
