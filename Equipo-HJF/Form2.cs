@@ -159,8 +159,8 @@ namespace Equipo_HJF
 
         String Operacion(string resultado)
         {
-            ///while (ComprobarNoSimbolos(resultado))
-            //{
+            while (ComprobarNoSimbolos(resultado))
+            {
                 string simbolo = "";
                 int i = 0;//almacenar la posicion donde se encontro el simbolo
 
@@ -204,8 +204,8 @@ namespace Equipo_HJF
                         //break;//evitar eliminar mas de un simbolo "*"
                     }
                 }
-             //}
-                return resultado;
+             }
+             return resultado;
         }
 
         bool ComprobarNoSimbolos(string resultado)
