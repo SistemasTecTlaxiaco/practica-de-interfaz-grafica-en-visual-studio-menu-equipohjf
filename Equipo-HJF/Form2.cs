@@ -154,14 +154,8 @@ namespace Equipo_HJF
 
         private void igual_Click(object sender, EventArgs e)
         {
-            Total();
-        }
-
-        void Total()
-        {
             SalidaText.Text = Operacion(SalidaText.Text);
         }
-
 
         String Operacion(string resultado)
         {
@@ -183,6 +177,19 @@ namespace Equipo_HJF
                         resultado = reducir(resultado, i, "multiplicacion");
                         break;//evitar eliminar mas de un simbolo "*"
                     }
+
+                    if (simbolo == "+")
+                    {
+                        resultado = reducir(resultado, i, "suma");
+                        break;//evitar eliminar mas de un simbolo "+"
+                    }
+
+                    if (simbolo == "-")
+                    {
+                        resultado = reducir(resultado, i, "resta");
+                        break;//evitar eliminar mas de un simbolo "-"
+                    }
+
                 }
             }
             return resultado;
@@ -249,12 +256,18 @@ namespace Equipo_HJF
                 subtotal = (double.Parse(izquierda) * double.Parse(derecha));
             }
 
+            if (OperacionArealizar == "suma")
+            {
+                subtotal = (double.Parse(izquierda) + double.Parse(derecha));
+            }
+            if (OperacionArealizar == "resta")
+            {
+                subtotal = (double.Parse(izquierda) - double.Parse(derecha));
+            }
+
             sub = subtotal.ToString();
             return resultado.Insert(j + 1, sub);
         }
-
-
-
 
         private void Borrar1_Click(object sender, EventArgs e)
         {
@@ -305,7 +318,5 @@ namespace Equipo_HJF
                 Salida(dig);//se envia a la salida
             }
         }
-
-        
     }
 }
