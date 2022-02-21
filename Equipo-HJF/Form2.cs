@@ -255,10 +255,10 @@ namespace Equipo_HJF
             //------------------------------------Izquierda a derecha--------------------------------------------------------------
             for (int l = j + 1; l < resultado.Length; l++)//se recogen datos de derecha a izquiertda del simbolo
             {
-                /*if (resultado.Substring(l, 1) == "+" || resultado.Substring(l, 1) == "-" || resultado.Substring(l, 1) == "*" || resultado.Substring(l, 1) == "/")
+                if (resultado.Substring(l, 1) == "+" || resultado.Substring(l, 1) == "-" || resultado.Substring(l, 1) == "*" || resultado.Substring(l, 1) == "/")
                 {
                     break;//Salir si hay un simbolo
-                }*/
+                }
                 Console.WriteLine("//"+derecha);
                 derecha += resultado.Substring(l, 1);
                 resultado = resultado.Remove(l, 1);
