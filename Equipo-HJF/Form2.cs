@@ -159,39 +159,64 @@ namespace Equipo_HJF
 
         String Operacion(string resultado)
         {
-           while (ComprobarNoSimbolos(resultado))
-           {
-                int i = 0;//almacenar la posicion donde se encontro el simbolo
-                for (i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
+           //while (ComprobarNoSimbolos(resultado))
+           //{
+                for (int i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
                 {
                     if (resultado.Substring(i, 1) == "/")
                     {
-                        resultado = reducir(resultado, i, "division");
+                        resultado = reducir(resultado, i, "division", false);
                     }
                 }
 
-                for (i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
+                for (int i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
                 {
                     if (resultado.Substring(i, 1) == "*")
                     {
-                        resultado = reducir(resultado, i, "multiplicacion");
+                        resultado = reducir(resultado, i, "multiplicacion", false);
                     }
                 }
 
-            for (i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
+                for (int i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
                 {
-                    if (resultado.Substring(i, 1) == "+")
+                if (resultado.Substring(i, 1) == "+")
                     {
-                        resultado = reducir(resultado, i, "suma");
+                        resultado = reducir(resultado, i, "suma", false);
                     }
-                    else if (resultado.Substring(i, 1) == "-")
+                    else if (resultado.Substring(i, 1) == "-" && ExisteOtroNegativo(resultado) == true)
                     {
-                        resultado = reducir(resultado, i, "resta");//i mo hay ,as simbolos
-                        //break;//evitar eliminar mas de un simbolo "*"
+                        Console.WriteLine("i:  " + i);
+                        if (resultado.Substring(0, 1) == "-")//si es el primero -8
+                        {
+                            resultado = reducir(resultado, i, "resta", true);
+                        }
+                        else {
+                            resultado = reducir(resultado, i, "resta", false);
+                        }
                     }
+                
                 }
-             }
+             //}
              return resultado;
+        }
+
+        bool ExisteOtroNegativo(string resultado)
+        {
+            bool ex = false;
+            int num = 0;
+            for (int i = 0; i < resultado.Length; i++)//se recogen datos de derecha a izquiertda del simbolo
+            {
+                string simbolo = resultado.Substring(i, 1);
+                if (resultado.Substring(i, 1) == "-" )
+                {
+                    num = num + 1;
+                }
+            }
+            if(num > 1)
+            {
+                 ex = true;
+            }
+            return ex;
         }
 
         bool ComprobarNoSimbolos(string resultado)
@@ -201,7 +226,8 @@ namespace Equipo_HJF
             { 
                 //posicion, cantidad
                 string simbolo = resultado.Substring(i, 1);
-                if (simbolo == "/" || simbolo == "*" || (simbolo == "-" && resultado.Substring(0, 1) != "-") || simbolo == "+")
+                //(resultado.Substring(l, 1) == "-" && izquierda.Length >0 && (izquierda.Substring(0, 1) == "-")
+                if (simbolo == "/" || simbolo == "*" || (simbolo == "-" && ExisteOtroNegativo(resultado)) || simbolo == "+")
                 {
                     existeSimbolo = true;
                     break;
@@ -210,41 +236,64 @@ namespace Equipo_HJF
             return existeSimbolo;
         }
 
-        string reducir(string resultado, int i, string OperacionArealizar)
+        string reducir(string resultado, int i, string OperacionArealizar, bool IsqNeg)
         {
             int j = 0;
             string izquierda = "", derecha = "", almacenar = "";
-            
-            resultado = resultado.Remove(i, 1);//se elimina el simbolo
-            
-            for (j = i - 1; j >= 0; j--)//se recogen datos de derecha a izquiertda del simbolo
-            {
-                if (resultado.Substring(j, 1) == "+" || resultado.Substring(j, 1) == "-" || resultado.Substring(j, 1) == "*" || resultado.Substring(j, 1) == "/" )
-                {
-                    break;//Salir si hay un simbolo
-                }
-                almacenar += resultado.Substring(j, 1);
-                resultado = resultado.Remove(j, 1);
-            }
-            
-            for (int k = almacenar.Length - 1; k >= 0; k--)//pasarlo en orden
-            {
-                izquierda += almacenar.Substring(k, 1);
-                almacenar = almacenar.Remove(k, 1);
-            }
 
-            //------------------------------------Izquierda a derecha--------------------------------------------------------------
-            for (int l = j + 1; l < resultado.Length; l++)//se recogen datos de derecha a izquiertda del simbolo
-            {
-                if (resultado.Substring(l, 1) == "+" || resultado.Substring(l, 1) == "-" || resultado.Substring(l, 1) == "*" || resultado.Substring(l, 1) == "/")
+            if (IsqNeg == true){
+                for (int l = 0; l < resultado.Length-1; l++)//se recogen datos de derecha a izquiertda del simbolo
                 {
-                    break;//Salir si hay un simbolo
+                    if (resultado.Substring(l, 1) == "+" || (resultado.Substring(l, 1) == "-" && izquierda.Length >0 && (izquierda.Substring(0, 1) == "-")) || resultado.Substring(l, 1) == "*" || resultado.Substring(l, 1) == "/")
+                    {
+                        break;//Salir si hay un simbolo
+                    }
+                    izquierda += resultado.Substring(l, 1);
+                    resultado = resultado.Remove(l, 1);
+                    l = l - 1;
                 }
-                derecha += resultado.Substring(l, 1);
-                resultado = resultado.Remove(l, 1);
-                l = l - 1;
+                for (int l = 0; l < resultado.Length; l++)//se recogen datos de derecha a izquiertda del simbolo
+                {
+                    if (resultado.Substring(l, 1) == "+" || (resultado.Substring(l, 1) == "-" && derecha.Length > 0 && (derecha.Substring(0, 1) == "-")) || resultado.Substring(l, 1) == "*" || resultado.Substring(l, 1) == "/")
+                    {
+                        break;//Salir si hay un simbolo
+                    }
+                    derecha += resultado.Substring(l, 1);
+                    resultado = resultado.Remove(l, 1);
+                    l = l - 1;
+                }
+            } else{
+                resultado = resultado.Remove(i, 1);//se elimina el simbolo del operador
+
+                for (j = i - 1; j >= 0; j--)//se recogen datos de derecha a izquiertda del simbolo
+                {
+                    if (resultado.Substring(j, 1) == "+" || resultado.Substring(j, 1) == "-" || resultado.Substring(j, 1) == "*" || resultado.Substring(j, 1) == "/")
+                    {
+                        break;//Salir si hay un simbolo
+                    }
+                    almacenar += resultado.Substring(j, 1);
+                    resultado = resultado.Remove(j, 1);
+                }
+
+                for (int k = almacenar.Length - 1; k >= 0; k--)//pasarlo en orden
+                {
+                    izquierda += almacenar.Substring(k, 1);
+                    almacenar = almacenar.Remove(k, 1);
+                }
+                
+                //------------------------------------Izquierda a derecha--------------------------------------------------------------
+                for (int l = j + 1; l < resultado.Length; l++)//se recogen datos de derecha a izquiertda del simbolo
+                {
+                    if (resultado.Substring(l, 1) == "+" || resultado.Substring(l, 1) == "-" || resultado.Substring(l, 1) == "*" || resultado.Substring(l, 1) == "/")
+                    {
+                        break;//Salir si hay un simbolo
+                    }
+                    derecha += resultado.Substring(l, 1);
+                    resultado = resultado.Remove(l, 1);
+                    l = l - 1;
+                }
+                //----------------------------------------------------------------------------------------------
             }
-            //----------------------------------------------------------------------------------------------
             double subtotal = 0;
             if (OperacionArealizar == "division")
             {
@@ -259,12 +308,17 @@ namespace Equipo_HJF
                 {
                     subtotal = (double.Parse(izquierda) + double.Parse(derecha));
                 }
-                if (OperacionArealizar == "resta")
+                if (OperacionArealizar == "resta" && IsqNeg == false)
                 {
-                    Console.WriteLine("izquierda: " + izquierda);
-                    Console.WriteLine("derecha: " + derecha);
                     subtotal = (double.Parse(izquierda) - double.Parse(derecha));
-                    Console.WriteLine("subtotal: " + subtotal);
+                }
+                else
+                {
+                    Console.WriteLine("izquierda ||: " + double.Parse(izquierda));
+                    Console.WriteLine("derecha ||: " + double.Parse(derecha));
+                    subtotal = (double.Parse(izquierda) + double.Parse(derecha));
+                    Console.WriteLine("subtotal ||: " + subtotal.ToString());
+                    return resultado.Insert(0, subtotal.ToString());
                 }
             }
 
