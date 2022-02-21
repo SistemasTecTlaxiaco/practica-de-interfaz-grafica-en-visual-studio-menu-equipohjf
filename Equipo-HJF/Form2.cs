@@ -169,22 +169,26 @@ namespace Equipo_HJF
 
         String Operacion(string resultado)
         {
-                string simbolo = "";
-            
-            // Console.WriteLine(ComprobarNoSimbolos(resultado));
-            int i = 0;//almacenar la posicion donde se encontro el simbolo
-            for (i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
+            while (ComprobarNoSimbolos(resultado))
             {
-                //posicion, cantidad
-                simbolo = resultado.Substring(i, 1);
-                if (simbolo == "/")
+                string simbolo = "";
+
+                // Console.WriteLine(ComprobarNoSimbolos(resultado));
+                int i = 0;//almacenar la posicion donde se encontro el simbolo
+                for (i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
                 {
-                    resultado = reducir(resultado, i, "division");
-                    break;//evitar eliminar mas de un simbolo "/"
-                }else if (simbolo == "*")
-                {
-                    resultado = reducir(resultado, i, "multiplicacion");
-                    break;//evitar eliminar mas de un simbolo "*"
+                    //posicion, cantidad
+                    simbolo = resultado.Substring(i, 1);
+                    if (simbolo == "/")
+                    {
+                        resultado = reducir(resultado, i, "division");
+                        break;//evitar eliminar mas de un simbolo "/"
+                    }
+                    else if (simbolo == "*")
+                    {
+                        resultado = reducir(resultado, i, "multiplicacion");
+                        break;//evitar eliminar mas de un simbolo "*"
+                    }
                 }
             }
             return resultado;
