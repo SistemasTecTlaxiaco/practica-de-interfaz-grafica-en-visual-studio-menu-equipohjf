@@ -163,37 +163,48 @@ namespace Equipo_HJF
             {
                 string simbolo = "";
                 int i = 0;//almacenar la posicion donde se encontro el simbolo
-                
                 for (i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
                 {
                     //posicion, cantidad
                     simbolo = resultado.Substring(i, 1);
+                    Console.WriteLine("position"+simbolo);
                     if (simbolo == "/")
                     {
                         resultado = reducir(resultado, i, "division");
-                        break;//evitar eliminar mas de un simbolo "/"
+                        //break;//evitar eliminar mas de un simbolo "/"
                     }
-                    else if (simbolo == "*")
+                }
+
+                for (i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
+                {
+                    //posicion, cantidad
+                    simbolo = resultado.Substring(i, 1);
+                    Console.WriteLine("position" + simbolo);
+                    if (simbolo == "*")
                     {
                         resultado = reducir(resultado, i, "multiplicacion");
-                        break;//evitar eliminar mas de un simbolo "*"
+                        //break;//evitar eliminar mas de un simbolo "*"
                     }
+                }
 
+            for (i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
+                {
+                    //posicion, cantidad
+                    simbolo = resultado.Substring(i, 1);
+                    Console.WriteLine("position" + simbolo);
                     if (simbolo == "+")
                     {
                         resultado = reducir(resultado, i, "suma");
-                        break;//evitar eliminar mas de un simbolo "+"
+                        //break;//evitar eliminar mas de un simbolo "/"
                     }
-
-                    if (simbolo == "-")
+                    else if (simbolo == "-")
                     {
                         resultado = reducir(resultado, i, "resta");
-                        break;//evitar eliminar mas de un simbolo "-"
+                        //break;//evitar eliminar mas de un simbolo "*"
                     }
-
                 }
-            }
-            return resultado;
+             }
+             return resultado;
         }
 
         bool ComprobarNoSimbolos(string resultado)
@@ -256,15 +267,19 @@ namespace Equipo_HJF
             {
                 subtotal = (double.Parse(izquierda) * double.Parse(derecha));
             }
+            else
+            {
+                if (OperacionArealizar == "suma")
+                {
+                    subtotal = (double.Parse(izquierda) + double.Parse(derecha));
+                }
+                if (OperacionArealizar == "resta")
+                {
+                    subtotal = (double.Parse(izquierda) - double.Parse(derecha));
+                }
+            }
 
-            if (OperacionArealizar == "suma")
-            {
-                subtotal = (double.Parse(izquierda) + double.Parse(derecha));
-            }
-            if (OperacionArealizar == "resta")
-            {
-                subtotal = (double.Parse(izquierda) - double.Parse(derecha));
-            }
+            
 
             sub = subtotal.ToString();
             return resultado.Insert(j + 1, sub);
