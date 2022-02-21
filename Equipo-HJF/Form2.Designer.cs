@@ -236,8 +236,6 @@ namespace Equipo_HJF
             this.PanelMenu.Size = new System.Drawing.Size(196, 649);
             this.PanelMenu.TabIndex = 37;
             this.PanelMenu.Visible = false;
-            this.PanelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelMenu_Paint);
-            this.PanelMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelMenu_Paint);
             // 
             // label2
             // 

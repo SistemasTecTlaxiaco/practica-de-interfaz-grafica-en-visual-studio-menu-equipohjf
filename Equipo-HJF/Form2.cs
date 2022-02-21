@@ -70,24 +70,10 @@ namespace Equipo_HJF
                 num = 0;
             }
         }
-        private void PanelMenu_Paint_1(object sender, PaintEventArgs e)
-        {
-             
-        }
 
         private void estandar_Click(object sender, EventArgs e)
         {
             PanelMenu.Visible = false;
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void seis_Click(object sender, EventArgs e)
-        {
-            Salida("6");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -95,9 +81,68 @@ namespace Equipo_HJF
             
         }
 
+        private void cero_Click(object sender, EventArgs e)
+        {
+            Salida("0");
+        }
+        private void uno_Click(object sender, EventArgs e)
+        {
+            Salida("1");
+        }
+        private void dos_Click(object sender, EventArgs e)
+        {
+            Salida("2");
+        }
+        private void tres_Click(object sender, EventArgs e)
+        {
+            Salida("3");
+        }
+        private void cuatro_Click(object sender, EventArgs e)
+        {
+            Salida("4");
+        }
+        private void cinco_Click(object sender, EventArgs e)
+        {
+            Salida("5");
+        }
+        private void seis_Click(object sender, EventArgs e)
+        {
+            Salida("6");
+        }
+        private void siete_Click(object sender, EventArgs e)
+        {
+            Salida("7");
+        }
+        private void ocho_Click(object sender, EventArgs e)
+        {
+            Salida("8");
+        }
         private void nueve_Click(object sender, EventArgs e)
         {
             Salida("9");
+        }
+
+        private void resta_Click(object sender, EventArgs e)
+        {
+            comprobarUltimo("-");
+        }
+
+        private void suma_Click(object sender, EventArgs e)
+        {
+            comprobarUltimo("+");
+        }
+
+        private void multiplicar_Click(object sender, EventArgs e)
+        {
+            comprobarUltimo("*");
+        }
+        private void Modulo_Click(object sender, EventArgs e)
+        {
+            comprobarUltimo("%");
+        }
+        private void dividir_Click(object sender, EventArgs e)
+        {
+            comprobarUltimo("/");
         }
 
         string Salida(string caracteresS)
@@ -106,45 +151,6 @@ namespace Equipo_HJF
             return caracteresS;
         }
 
-        private void tres_Click(object sender, EventArgs e)
-        {
-            Salida("3");
-        }
-
-        private void ocho_Click(object sender, EventArgs e)
-        {
-            Salida("8");
-        }
-
-        private void cinco_Click(object sender, EventArgs e)
-        {
-            Salida("5");
-        }
-
-        private void dos_Click(object sender, EventArgs e)
-        {
-            Salida("2");
-        }
-
-        private void cero_Click(object sender, EventArgs e)
-        {
-            Salida("0");
-        }
-
-        private void siete_Click(object sender, EventArgs e)
-        {
-            Salida("7");
-        }
-
-        private void cuatro_Click(object sender, EventArgs e)
-        {
-            Salida("4");
-        }
-
-        private void uno_Click(object sender, EventArgs e)
-        {
-            Salida("1");
-        }
 
         private void igual_Click(object sender, EventArgs e)
         {
@@ -153,27 +159,15 @@ namespace Equipo_HJF
 
         void Total()
         {
-            SalidaText.Text = prioridad(SalidaText.Text);
+            SalidaText.Text = Operacion(SalidaText.Text);
         }
 
-        string prioridad(string resultado)
-        {
-            //   /
-            //   *
-            //   -  +   la mas acercada a la izquierda
-            //i = posicion
-            return Operacion(resultado);
-
-
-        }
 
         String Operacion(string resultado)
         {
             while (ComprobarNoSimbolos(resultado))
             {
                 string simbolo = "";
-
-                // Console.WriteLine(ComprobarNoSimbolos(resultado));
                 int i = 0;//almacenar la posicion donde se encontro el simbolo
                 for (i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
                 {
@@ -199,8 +193,7 @@ namespace Equipo_HJF
             bool existeSimbolo = false;
             string simbolo = "";
             for (int i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
-            {
-                
+            { 
                 //posicion, cantidad
                 simbolo = resultado.Substring(i, 1);
                 if (simbolo == "/" || simbolo == "*" || simbolo == "-" || simbolo == "+")
@@ -215,11 +208,10 @@ namespace Equipo_HJF
         string reducir(string resultado, int i, string OperacionArealizar)
         {
             int j = 0;
-            string dividendo = "", divisor = "", almacenar = "", sub = "";
+            string izquierda = "", derecha = "", almacenar = "", sub = "";
 
             resultado = resultado.Remove(i, 1);//se elimina el simbolo
 
-            Console.WriteLine("i: " + i);
             for (j = i - 1; j >= 0; j--)//se recogen datos de derecha a izquiertda del simbolo
             {
                 if (resultado.Substring(j, 1) == "+" || resultado.Substring(j, 1) == "-" || resultado.Substring(j, 1) == "*" || resultado.Substring(j, 1) == "/")
@@ -230,11 +222,9 @@ namespace Equipo_HJF
                 resultado = resultado.Remove(j, 1);
             }
 
-            Console.WriteLine("/////--." + almacenar);
-
             for (int k = almacenar.Length - 1; k >= 0; k--)//pasarlo en orden
             {
-                dividendo += almacenar.Substring(k, 1);
+                izquierda += almacenar.Substring(k, 1);
                 almacenar = almacenar.Remove(k, 1);
             }
 
@@ -245,30 +235,26 @@ namespace Equipo_HJF
                 {
                     break;//Salir si hay un simbolo
                 }
-                Console.WriteLine("recorre:  " + l);
-                divisor += resultado.Substring(l, 1);
+                derecha += resultado.Substring(l, 1);
                 resultado = resultado.Remove(l, 1);
                 l = l - 1;
             }
             //----------------------------------------------------------------------------------------------
-            float subtotal = 0;
+            double subtotal = 0;
             if (OperacionArealizar == "division")
             {
-                Console.WriteLine("dividendo:  " + dividendo);
-                Console.WriteLine("divisor:  " + divisor);
-                subtotal = (float.Parse(dividendo) / float.Parse(divisor));
+                subtotal = (double.Parse(izquierda) / double.Parse(derecha));
             }else if (OperacionArealizar == "multiplicacion")
             {
-                Console.WriteLine("dividendo:  " + dividendo);
-                Console.WriteLine("divisor:  " + divisor);
-                subtotal = (float.Parse(dividendo) * float.Parse(divisor));
+                subtotal = (double.Parse(izquierda) * double.Parse(derecha));
             }
 
             sub = subtotal.ToString();
             return resultado.Insert(j + 1, sub);
         }
 
-        
+
+
 
         private void Borrar1_Click(object sender, EventArgs e)
         {
@@ -307,18 +293,9 @@ namespace Equipo_HJF
             {
                 comprobarUltimo(".");
             }
-            
         }
 
-        private void Modulo_Click(object sender, EventArgs e)
-        {
-            comprobarUltimo("%");
-        }
-
-        private void dividir_Click(object sender, EventArgs e)
-        {
-            comprobarUltimo("/");
-        }
+        
 
         void comprobarUltimo(string dig)
         {
@@ -329,34 +306,6 @@ namespace Equipo_HJF
             }
         }
 
-        private void resta_Click(object sender, EventArgs e)
-        {
-            comprobarUltimo("-");
-        }
-
-        private void suma_Click(object sender, EventArgs e)
-        {
-            comprobarUltimo("+");
-        }
-
-        private void PanelMenu_Paint(object sender, EventArgs e)
-        {
-
-        }
-
         
-        private void PanelMenu_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void PanelMenu_Paint(object sender, MouseEventArgs e)
-        {
-        }
-
-        private void multiplicar_Click(object sender, EventArgs e)
-        {
-            comprobarUltimo("*");
-        }
     }
 }
