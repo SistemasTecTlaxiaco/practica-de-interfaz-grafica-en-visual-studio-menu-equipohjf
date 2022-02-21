@@ -231,7 +231,7 @@ namespace Equipo_HJF
         string reducir(string resultado, int i, string OperacionArealizar)
         {
             int j = 0;
-            string izquierda = "", derecha = "", almacenar = "";
+            string izquierda = "", derecha = "", almacenar = "" sub = "";
 
             resultado = resultado.Remove(i, 1);//se elimina el simbolo
 
