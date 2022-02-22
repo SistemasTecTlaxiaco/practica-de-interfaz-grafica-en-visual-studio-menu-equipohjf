@@ -79,9 +79,7 @@ namespace Equipo_HJF
 
         private void estandar_Click(object sender, EventArgs e)
         {
-            PanelMenu.Visible = false;
-            panel6.Visible = false;
-            MenuVertical.Visible = true;
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -436,13 +434,59 @@ namespace Equipo_HJF
 
         private void button2_Click(object sender, EventArgs e)
         {
-            PanelMenu.Visible = false;
-            panel6.Visible = true;
+            
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button51_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void PanelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PanelCientifica_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //cientifica
+            PanelMenu.Visible = false;
+            MenuVertical.Visible = false;
+            panel6.Visible = false;
+            PanelCientifica.Visible = true;
+        }
+
+        private void estandar_Click_1(object sender, EventArgs e)
+        {
+            //Estandar
+            PanelMenu.Visible = false;
+            panel6.Visible = false;
+            PanelCientifica.Visible = false;
+            MenuVertical.Visible = true;
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            //programador
+            PanelMenu.Visible = false;
+            MenuVertical.Visible = false;
+            PanelCientifica.Visible = false;
+            panel6.Visible = true;
         }
     }
 }
