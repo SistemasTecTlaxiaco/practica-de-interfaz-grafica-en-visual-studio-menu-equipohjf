@@ -147,6 +147,13 @@ namespace Equipo_HJF
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.estandar = new System.Windows.Forms.Button();
+            this.PanelFecha = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Diferencia = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Men)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
@@ -161,6 +168,7 @@ namespace Equipo_HJF
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.PanelFecha.SuspendLayout();
             this.SuspendLayout();
             // 
             // BarraTitulo
@@ -1157,6 +1165,7 @@ namespace Equipo_HJF
             // PanelCientifica
             // 
             this.PanelCientifica.BackColor = System.Drawing.Color.Black;
+            this.PanelCientifica.Controls.Add(this.PanelFecha);
             this.PanelCientifica.Controls.Add(this.button64);
             this.PanelCientifica.Controls.Add(this.button65);
             this.PanelCientifica.Controls.Add(this.button66);
@@ -1838,6 +1847,7 @@ namespace Equipo_HJF
             this.button3.TabIndex = 3;
             this.button3.Text = "Cálculo de fecha";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -1894,6 +1904,78 @@ namespace Equipo_HJF
             this.estandar.UseVisualStyleBackColor = false;
             this.estandar.Click += new System.EventHandler(this.estandar_Click_1);
             // 
+            // PanelFecha
+            // 
+            this.PanelFecha.Controls.Add(this.dateTimePicker1);
+            this.PanelFecha.Controls.Add(this.dateTimePicker2);
+            this.PanelFecha.Controls.Add(this.Diferencia);
+            this.PanelFecha.Controls.Add(this.label5);
+            this.PanelFecha.Controls.Add(this.label4);
+            this.PanelFecha.Controls.Add(this.label3);
+            this.PanelFecha.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelFecha.Location = new System.Drawing.Point(0, 0);
+            this.PanelFecha.Name = "PanelFecha";
+            this.PanelFecha.Size = new System.Drawing.Size(398, 650);
+            this.PanelFecha.TabIndex = 46;
+            this.PanelFecha.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label3.Location = new System.Drawing.Point(164, 83);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 22);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Desde";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label4.Location = new System.Drawing.Point(164, 246);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 22);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Hasta";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label5.Location = new System.Drawing.Point(125, 425);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(153, 22);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Diferencia en días";
+            // 
+            // Diferencia
+            // 
+            this.Diferencia.BackColor = System.Drawing.SystemColors.InfoText;
+            this.Diferencia.Location = new System.Drawing.Point(71, 489);
+            this.Diferencia.Multiline = true;
+            this.Diferencia.Name = "Diferencia";
+            this.Diferencia.Size = new System.Drawing.Size(236, 48);
+            this.Diferencia.TabIndex = 3;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.MenuText;
+            this.dateTimePicker1.Location = new System.Drawing.Point(107, 144);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 4;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(107, 333);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 5;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1928,6 +2010,8 @@ namespace Equipo_HJF
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.PanelFecha.ResumeLayout(false);
+            this.PanelFecha.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2051,5 +2135,12 @@ namespace Equipo_HJF
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button estandar;
+        private System.Windows.Forms.Panel PanelFecha;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox Diferencia;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }

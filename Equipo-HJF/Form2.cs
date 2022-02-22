@@ -462,12 +462,18 @@ namespace Equipo_HJF
 
         }
 
+        private void PanelFecha_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
             //cientifica
             PanelMenu.Visible = false;
             MenuVertical.Visible = false;
             panel6.Visible = false;
+            PanelFecha.Visible= false;
             PanelCientifica.Visible = true;
         }
 
@@ -477,6 +483,7 @@ namespace Equipo_HJF
             PanelMenu.Visible = false;
             panel6.Visible = false;
             PanelCientifica.Visible = false;
+            PanelFecha.Visible = false;
             MenuVertical.Visible = true;
         }
 
@@ -486,7 +493,18 @@ namespace Equipo_HJF
             PanelMenu.Visible = false;
             MenuVertical.Visible = false;
             PanelCientifica.Visible = false;
+            PanelFecha.Visible = false;
             panel6.Visible = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //Fecha
+            PanelMenu.Visible = false;
+            MenuVertical.Visible = false;
+            PanelCientifica.Visible = false;
+            panel6.Visible = false;
+            PanelFecha.Visible = true;
         }
     }
 }
