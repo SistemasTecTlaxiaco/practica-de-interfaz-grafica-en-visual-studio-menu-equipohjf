@@ -18,6 +18,14 @@ namespace Equipo_HJF
             InitializeComponent();
         }
 
+        private void agregarNumero(string numero)
+        {
+            if (SalidaText.Text == "0")
+                SalidaText.Text = "";
+
+            SalidaText.Text += numero;
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -81,43 +89,53 @@ namespace Equipo_HJF
 
         private void cero_Click(object sender, EventArgs e)
         {
-            Salida("0");
+            var boton = ((Button)sender);
+            agregarNumero(boton.Text);
         }
         private void uno_Click(object sender, EventArgs e)
         {
-            Salida("1");
+            var boton = ((Button)sender);
+            agregarNumero(boton.Text);
         }
         private void dos_Click(object sender, EventArgs e)
         {
-            Salida("2");
+            var boton = ((Button)sender);
+            agregarNumero(boton.Text);
         }
         private void tres_Click(object sender, EventArgs e)
         {
-            Salida("3");
+            var boton = ((Button)sender);
+            agregarNumero(boton.Text);
         }
         private void cuatro_Click(object sender, EventArgs e)
         {
-            Salida("4");
+            var boton = ((Button)sender);
+            agregarNumero(boton.Text);
         }
         private void cinco_Click(object sender, EventArgs e)
         {
-            Salida("5");
+            var boton = ((Button)sender);
+            agregarNumero(boton.Text);
         }
         private void seis_Click(object sender, EventArgs e)
         {
-            Salida("6");
+            var boton = ((Button)sender);
+            agregarNumero(boton.Text);
         }
         private void siete_Click(object sender, EventArgs e)
         {
-            Salida("7");
+            var boton = ((Button)sender);
+            agregarNumero(boton.Text);
         }
         private void ocho_Click(object sender, EventArgs e)
         {
-            Salida("8");
+            var boton = ((Button)sender);
+            agregarNumero(boton.Text);
         }
         private void nueve_Click(object sender, EventArgs e)
         {
-            Salida("9");
+            var boton = ((Button)sender);
+            agregarNumero(boton.Text);
         }
 
         private void resta_Click(object sender, EventArgs e)
