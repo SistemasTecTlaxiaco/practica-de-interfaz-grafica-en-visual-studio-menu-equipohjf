@@ -506,5 +506,10 @@ namespace Equipo_HJF
             panel6.Visible = false;
             PanelFecha.Visible = true;
         }
+
+        private void PanelFecha_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
