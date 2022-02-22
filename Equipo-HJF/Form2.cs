@@ -54,22 +54,29 @@ namespace Equipo_HJF
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        int num = 0;//el estado empieza en cero por defecto
-        private void Men_Click(object sender, EventArgs e)// Metodo del evento
+        int num = 0;
+        private void Men_Click(object sender, EventArgs e)
         {
-            if (num == 0)//si el primer estado es 0 podemos entender que es la primera vez que se ha dado click
+            if (num == 0)
             {
-                PanelMenu.Visible = true;// activamos el panel 
-                num = 1;// cambiamos el estado a 1 porque ya se ha dado click la primera vez
-            }else{//la siguiente vez que se de click entenderemos que se tiene que cerrar
-                PanelMenu.Visible = false;//se cierra el panel
-                num = 0;// pasamos el estado a 0 para que la proxima vez que se de click se abra
+                PanelMenu.Visible = true;
+                num = 1;
+            }
+            else
+            {
+                PanelMenu.Visible = false;
+                num = 0;
             }
         }
 
         private void estandar_Click(object sender, EventArgs e)
         {
             PanelMenu.Visible = false;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
         }
 
         private void cero_Click(object sender, EventArgs e)
@@ -172,13 +179,14 @@ namespace Equipo_HJF
 
                 for (int i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
                 {
-                    if (resultado.Substring(i, 1) == "+")
+                if (resultado.Substring(i, 1) == "+")
                     {
                         resultado = reducir(resultado, i, "suma", false);
                     }
-                    else if (resultado.Substring(i, 1) == "-")
+                    else if (resultado.Substring(i, 1) == "-" && ExisteOtroNegativo(resultado) == true)
                     {
-                        if (resultado.Substring(0, 1) == "-" && ExisteOtroNegativo(resultado) == true)//si es el primero -8
+                        Console.WriteLine("i:  " + i);
+                        if (resultado.Substring(0, 1) == "-")//si es el primero -8
                         {
                             resultado = reducir(resultado, i, "resta", true);
                         }
@@ -198,12 +206,13 @@ namespace Equipo_HJF
             int num = 0;
             for (int i = 0; i < resultado.Length; i++)//se recogen datos de derecha a izquiertda del simbolo
             {
+                string simbolo = resultado.Substring(i, 1);
                 if (resultado.Substring(i, 1) == "-" )
                 {
                     num = num + 1;
                 }
             }
-            if(num >= 2)
+            if(num > 1)
             {
                  ex = true;
             }
@@ -214,24 +223,11 @@ namespace Equipo_HJF
         {
             bool existeSimbolo = false;
             for (int i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
-            {
+            { 
+                //posicion, cantidad
                 string simbolo = resultado.Substring(i, 1);
-                if (simbolo == "/" || simbolo == "*" || simbolo == "+" || ExisteOtroNegativo(resultado) == true || (resultado.Substring(0, 1) == "-" && ExisteOtroNegativo(resultado) == true && ExisteMasSimbolos(resultado) == false))
-                {
-                    existeSimbolo = true;
-                    break;
-                }
-            }
-            return existeSimbolo;
-        }
-
-        bool ExisteMasSimbolos(string resultado)
-        {
-            bool existeSimbolo = false;
-            for (int i = 0; i <= resultado.Length - 1; i++)//recorrer toda la cadena
-            {
-                string simbolo = resultado.Substring(i, 1);
-                if (simbolo == "/" || simbolo == "*" || simbolo == "+")
+                //(resultado.Substring(l, 1) == "-" && izquierda.Length >0 && (izquierda.Substring(0, 1) == "-")
+                if (simbolo == "/" || simbolo == "*" || (simbolo == "-" && ExisteOtroNegativo(resultado)) || simbolo == "+")
                 {
                     existeSimbolo = true;
                     break;
@@ -244,11 +240,6 @@ namespace Equipo_HJF
         {
             int j = 0;
             string izquierda = "", derecha = "", almacenar = "";
-
-            if(resultado.Substring(0, 1) == "-" && ComprobarNoSimbolos(resultado) == false)
-            {
-                return resultado;
-            }
 
             if (IsqNeg == true){
                 for (int l = 0; l < resultado.Length-1; l++)//se recogen datos de derecha a izquiertda del simbolo
@@ -319,7 +310,7 @@ namespace Equipo_HJF
                 }
                 if (OperacionArealizar == "resta" && IsqNeg == false)
                 {
-                    subtotal = (double.Parse(izquierda) - double.Parse(derecha));//
+                    subtotal = (double.Parse(izquierda) - double.Parse(derecha));
                 }
                 else
                 {
@@ -402,22 +393,6 @@ namespace Equipo_HJF
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SalidaText_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                if (ValidarUltimo())//comprobar que no se repita
-                {
-                    SalidaText.Text = Operacion(SalidaText.Text);
-                }
-            }
-        }
-
-        private void SalidaText_TextChanged(object sender, EventArgs e)
         {
 
         }
