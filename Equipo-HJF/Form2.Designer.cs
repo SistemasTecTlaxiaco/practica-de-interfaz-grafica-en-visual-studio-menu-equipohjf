@@ -78,6 +78,41 @@ namespace Equipo_HJF
             this.cuatro = new System.Windows.Forms.Button();
             this.multiplicar = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
+=======
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Men)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
@@ -90,6 +125,10 @@ namespace Equipo_HJF
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+<<<<<<< HEAD
+=======
+            this.panel6.SuspendLayout();
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.SuspendLayout();
             // 
             // BarraTitulo
@@ -203,6 +242,7 @@ namespace Equipo_HJF
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MenuVertical.BackColor = System.Drawing.Color.Black;
             this.MenuVertical.Controls.Add(this.PanelMenu);
+            this.MenuVertical.Controls.Add(this.panel6);
             this.MenuVertical.Controls.Add(this.SalidaText);
             this.MenuVertical.Controls.Add(this.igual);
             this.MenuVertical.Controls.Add(this.BorrarTodo);
@@ -252,18 +292,31 @@ namespace Equipo_HJF
             this.PanelMenu.Controls.Add(this.estandar);
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
+<<<<<<< HEAD
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.Size = new System.Drawing.Size(196, 649);
+=======
+            this.PanelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PanelMenu.Name = "PanelMenu";
+            this.PanelMenu.Size = new System.Drawing.Size(218, 799);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.PanelMenu.TabIndex = 37;
             this.PanelMenu.Visible = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+<<<<<<< HEAD
             this.pictureBox4.Location = new System.Drawing.Point(22, 225);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(26, 42);
+=======
+            this.pictureBox4.Location = new System.Drawing.Point(29, 277);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(35, 52);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 45;
             this.pictureBox4.TabStop = false;
@@ -271,10 +324,17 @@ namespace Equipo_HJF
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+<<<<<<< HEAD
             this.pictureBox3.Location = new System.Drawing.Point(23, 171);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 42);
+=======
+            this.pictureBox3.Location = new System.Drawing.Point(31, 210);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(33, 52);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 44;
             this.pictureBox3.TabStop = false;
@@ -283,10 +343,17 @@ namespace Equipo_HJF
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+<<<<<<< HEAD
             this.pictureBox2.Location = new System.Drawing.Point(23, 121);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(34, 43);
+=======
+            this.pictureBox2.Location = new System.Drawing.Point(31, 149);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(44, 52);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 43;
             this.pictureBox2.TabStop = false;
@@ -294,10 +361,17 @@ namespace Equipo_HJF
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+<<<<<<< HEAD
             this.pictureBox1.Location = new System.Drawing.Point(23, 70);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(33, 42);
+=======
+            this.pictureBox1.Location = new System.Drawing.Point(31, 86);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(44, 52);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
@@ -305,37 +379,65 @@ namespace Equipo_HJF
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.MediumBlue;
+<<<<<<< HEAD
             this.panel4.Location = new System.Drawing.Point(8, 225);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(10, 42);
+=======
+            this.panel4.Location = new System.Drawing.Point(11, 277);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(13, 52);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.panel4.TabIndex = 41;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MediumBlue;
+<<<<<<< HEAD
             this.panel3.Location = new System.Drawing.Point(9, 171);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(9, 42);
+=======
+            this.panel3.Location = new System.Drawing.Point(12, 210);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(12, 52);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.panel3.TabIndex = 40;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumBlue;
+<<<<<<< HEAD
             this.panel1.Location = new System.Drawing.Point(9, 121);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(9, 42);
+=======
+            this.panel1.Location = new System.Drawing.Point(12, 149);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(12, 52);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.panel1.TabIndex = 39;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MediumBlue;
+<<<<<<< HEAD
             this.panel2.Location = new System.Drawing.Point(9, 70);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(9, 42);
+=======
+            this.panel2.Location = new System.Drawing.Point(12, 86);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(12, 52);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.panel2.TabIndex = 38;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -345,7 +447,12 @@ namespace Equipo_HJF
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.label2.Location = new System.Drawing.Point(39, 19);
+=======
+            this.label2.Location = new System.Drawing.Point(31, 23);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 17);
             this.label2.TabIndex = 6;
@@ -359,7 +466,12 @@ namespace Equipo_HJF
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+<<<<<<< HEAD
             this.button3.Location = new System.Drawing.Point(2, 223);
+=======
+            this.button3.Location = new System.Drawing.Point(3, 274);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(200, 45);
             this.button3.TabIndex = 3;
@@ -369,12 +481,18 @@ namespace Equipo_HJF
             // button2
             // 
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button2.Cursor = System.Windows.Forms.Cursors.PanSW;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             this.button2.Location = new System.Drawing.Point(0, 175);
+=======
+            this.button2.Location = new System.Drawing.Point(0, 215);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 45);
             this.button2.TabIndex = 2;
@@ -390,7 +508,12 @@ namespace Equipo_HJF
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+<<<<<<< HEAD
             this.button1.Location = new System.Drawing.Point(0, 121);
+=======
+            this.button1.Location = new System.Drawing.Point(0, 149);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 45);
             this.button1.TabIndex = 1;
@@ -410,9 +533,16 @@ namespace Equipo_HJF
             this.estandar.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.estandar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.estandar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             this.estandar.Location = new System.Drawing.Point(0, 70);
             this.estandar.Name = "estandar";
             this.estandar.Size = new System.Drawing.Size(194, 45);
+=======
+            this.estandar.Location = new System.Drawing.Point(0, 86);
+            this.estandar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.estandar.Name = "estandar";
+            this.estandar.Size = new System.Drawing.Size(216, 55);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.estandar.TabIndex = 0;
             this.estandar.Text = "Estándar";
             this.estandar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -424,14 +554,27 @@ namespace Equipo_HJF
             this.SalidaText.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SalidaText.BackColor = System.Drawing.Color.Black;
             this.SalidaText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SalidaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SalidaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SalidaText.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+<<<<<<< HEAD
             this.SalidaText.Location = new System.Drawing.Point(3, 19);
             this.SalidaText.Multiline = true;
             this.SalidaText.Name = "SalidaText";
             this.SalidaText.Size = new System.Drawing.Size(392, 164);
             this.SalidaText.TabIndex = 36;
             this.SalidaText.TextChanged += new System.EventHandler(this.SalidaText_TextChanged);
+=======
+            this.SalidaText.Location = new System.Drawing.Point(4, 23);
+            this.SalidaText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SalidaText.Multiline = true;
+            this.SalidaText.Name = "SalidaText";
+            this.SalidaText.ReadOnly = true;
+            this.SalidaText.Size = new System.Drawing.Size(522, 201);
+            this.SalidaText.TabIndex = 36;
+            this.SalidaText.Text = "0";
+            this.SalidaText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.SalidaText.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             // 
             // igual
             // 
@@ -440,7 +583,12 @@ namespace Equipo_HJF
             this.igual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.igual.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.igual.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.igual.Location = new System.Drawing.Point(296, 579);
+=======
+            this.igual.Location = new System.Drawing.Point(395, 713);
+            this.igual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.igual.Name = "igual";
             this.igual.Size = new System.Drawing.Size(97, 65);
             this.igual.TabIndex = 34;
@@ -455,7 +603,12 @@ namespace Equipo_HJF
             this.BorrarTodo.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.BorrarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BorrarTodo.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.BorrarTodo.Location = new System.Drawing.Point(105, 224);
+=======
+            this.BorrarTodo.Location = new System.Drawing.Point(140, 276);
+            this.BorrarTodo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.BorrarTodo.Name = "BorrarTodo";
             this.BorrarTodo.Size = new System.Drawing.Size(97, 65);
             this.BorrarTodo.TabIndex = 25;
@@ -468,7 +621,12 @@ namespace Equipo_HJF
             this.cero.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.cero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cero.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.cero.Location = new System.Drawing.Point(105, 579);
+=======
+            this.cero.Location = new System.Drawing.Point(140, 713);
+            this.cero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.cero.Name = "cero";
             this.cero.Size = new System.Drawing.Size(97, 65);
             this.cero.TabIndex = 33;
@@ -482,7 +640,12 @@ namespace Equipo_HJF
             this.Modulo.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.Modulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Modulo.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.Modulo.Location = new System.Drawing.Point(8, 224);
+=======
+            this.Modulo.Location = new System.Drawing.Point(11, 276);
+            this.Modulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.Modulo.Name = "Modulo";
             this.Modulo.Size = new System.Drawing.Size(97, 65);
             this.Modulo.TabIndex = 22;
@@ -497,7 +660,12 @@ namespace Equipo_HJF
             this.punto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.punto.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.punto.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.punto.Location = new System.Drawing.Point(202, 579);
+=======
+            this.punto.Location = new System.Drawing.Point(269, 713);
+            this.punto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.punto.Name = "punto";
             this.punto.Size = new System.Drawing.Size(97, 65);
             this.punto.TabIndex = 32;
@@ -513,7 +681,12 @@ namespace Equipo_HJF
             this.Borrar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Borrar1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Borrar1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.Borrar1.Location = new System.Drawing.Point(202, 224);
+=======
+            this.Borrar1.Location = new System.Drawing.Point(269, 276);
+            this.Borrar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.Borrar1.Name = "Borrar1";
             this.Borrar1.Size = new System.Drawing.Size(97, 65);
             this.Borrar1.TabIndex = 12;
@@ -527,7 +700,12 @@ namespace Equipo_HJF
             this.masmenos.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.masmenos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.masmenos.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.masmenos.Location = new System.Drawing.Point(8, 579);
+=======
+            this.masmenos.Location = new System.Drawing.Point(11, 713);
+            this.masmenos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.masmenos.Name = "masmenos";
             this.masmenos.Size = new System.Drawing.Size(97, 65);
             this.masmenos.TabIndex = 31;
@@ -542,7 +720,12 @@ namespace Equipo_HJF
             this.Borrar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Borrar2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Borrar2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.Borrar2.Location = new System.Drawing.Point(296, 224);
+=======
+            this.Borrar2.Location = new System.Drawing.Point(395, 276);
+            this.Borrar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.Borrar2.Name = "Borrar2";
             this.Borrar2.Size = new System.Drawing.Size(97, 65);
             this.Borrar2.TabIndex = 13;
@@ -557,7 +740,12 @@ namespace Equipo_HJF
             this.suma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.suma.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.suma.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.suma.Location = new System.Drawing.Point(296, 508);
+=======
+            this.suma.Location = new System.Drawing.Point(395, 625);
+            this.suma.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.suma.Name = "suma";
             this.suma.Size = new System.Drawing.Size(97, 65);
             this.suma.TabIndex = 30;
@@ -571,7 +759,12 @@ namespace Equipo_HJF
             this.fraccion.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.fraccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fraccion.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.fraccion.Location = new System.Drawing.Point(8, 295);
+=======
+            this.fraccion.Location = new System.Drawing.Point(11, 363);
+            this.fraccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.fraccion.Name = "fraccion";
             this.fraccion.Size = new System.Drawing.Size(97, 65);
             this.fraccion.TabIndex = 14;
@@ -585,7 +778,12 @@ namespace Equipo_HJF
             this.tres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tres.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tres.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.tres.Location = new System.Drawing.Point(202, 508);
+=======
+            this.tres.Location = new System.Drawing.Point(269, 625);
+            this.tres.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.tres.Name = "tres";
             this.tres.Size = new System.Drawing.Size(97, 65);
             this.tres.TabIndex = 29;
@@ -599,7 +797,12 @@ namespace Equipo_HJF
             this.exponencial.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.exponencial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exponencial.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.exponencial.Location = new System.Drawing.Point(105, 295);
+=======
+            this.exponencial.Location = new System.Drawing.Point(140, 363);
+            this.exponencial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.exponencial.Name = "exponencial";
             this.exponencial.Size = new System.Drawing.Size(97, 65);
             this.exponencial.TabIndex = 15;
@@ -612,7 +815,12 @@ namespace Equipo_HJF
             this.dos.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.dos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dos.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.dos.Location = new System.Drawing.Point(105, 508);
+=======
+            this.dos.Location = new System.Drawing.Point(140, 625);
+            this.dos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.dos.Name = "dos";
             this.dos.Size = new System.Drawing.Size(97, 65);
             this.dos.TabIndex = 28;
@@ -627,7 +835,12 @@ namespace Equipo_HJF
             this.raiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.raiz.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.raiz.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.raiz.Location = new System.Drawing.Point(202, 295);
+=======
+            this.raiz.Location = new System.Drawing.Point(269, 363);
+            this.raiz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.raiz.Name = "raiz";
             this.raiz.Size = new System.Drawing.Size(97, 65);
             this.raiz.TabIndex = 16;
@@ -640,7 +853,12 @@ namespace Equipo_HJF
             this.uno.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.uno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uno.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.uno.Location = new System.Drawing.Point(8, 508);
+=======
+            this.uno.Location = new System.Drawing.Point(11, 625);
+            this.uno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.uno.Name = "uno";
             this.uno.Size = new System.Drawing.Size(97, 65);
             this.uno.TabIndex = 27;
@@ -655,7 +873,12 @@ namespace Equipo_HJF
             this.dividir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dividir.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dividir.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.dividir.Location = new System.Drawing.Point(296, 295);
+=======
+            this.dividir.Location = new System.Drawing.Point(395, 363);
+            this.dividir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.dividir.Name = "dividir";
             this.dividir.Size = new System.Drawing.Size(97, 65);
             this.dividir.TabIndex = 17;
@@ -670,7 +893,12 @@ namespace Equipo_HJF
             this.resta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.resta.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resta.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.resta.Location = new System.Drawing.Point(296, 437);
+=======
+            this.resta.Location = new System.Drawing.Point(395, 538);
+            this.resta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.resta.Name = "resta";
             this.resta.Size = new System.Drawing.Size(97, 65);
             this.resta.TabIndex = 26;
@@ -684,7 +912,12 @@ namespace Equipo_HJF
             this.siete.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.siete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.siete.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.siete.Location = new System.Drawing.Point(8, 366);
+=======
+            this.siete.Location = new System.Drawing.Point(11, 450);
+            this.siete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.siete.Name = "siete";
             this.siete.Size = new System.Drawing.Size(97, 65);
             this.siete.TabIndex = 18;
@@ -699,7 +932,12 @@ namespace Equipo_HJF
             this.seis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.seis.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seis.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.seis.Location = new System.Drawing.Point(202, 437);
+=======
+            this.seis.Location = new System.Drawing.Point(269, 538);
+            this.seis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.seis.Name = "seis";
             this.seis.Size = new System.Drawing.Size(97, 65);
             this.seis.TabIndex = 24;
@@ -713,7 +951,12 @@ namespace Equipo_HJF
             this.ocho.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.ocho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ocho.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.ocho.Location = new System.Drawing.Point(105, 366);
+=======
+            this.ocho.Location = new System.Drawing.Point(140, 450);
+            this.ocho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.ocho.Name = "ocho";
             this.ocho.Size = new System.Drawing.Size(97, 65);
             this.ocho.TabIndex = 19;
@@ -727,7 +970,12 @@ namespace Equipo_HJF
             this.cinco.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.cinco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cinco.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.cinco.Location = new System.Drawing.Point(105, 437);
+=======
+            this.cinco.Location = new System.Drawing.Point(140, 538);
+            this.cinco.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.cinco.Name = "cinco";
             this.cinco.Size = new System.Drawing.Size(97, 65);
             this.cinco.TabIndex = 23;
@@ -742,7 +990,12 @@ namespace Equipo_HJF
             this.nueve.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nueve.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nueve.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.nueve.Location = new System.Drawing.Point(202, 366);
+=======
+            this.nueve.Location = new System.Drawing.Point(269, 450);
+            this.nueve.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.nueve.Name = "nueve";
             this.nueve.Size = new System.Drawing.Size(97, 65);
             this.nueve.TabIndex = 20;
@@ -756,7 +1009,12 @@ namespace Equipo_HJF
             this.cuatro.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
             this.cuatro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cuatro.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.cuatro.Location = new System.Drawing.Point(8, 437);
+=======
+            this.cuatro.Location = new System.Drawing.Point(11, 538);
+            this.cuatro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.cuatro.Name = "cuatro";
             this.cuatro.Size = new System.Drawing.Size(97, 65);
             this.cuatro.TabIndex = 11;
@@ -771,7 +1029,12 @@ namespace Equipo_HJF
             this.multiplicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.multiplicar.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.multiplicar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+<<<<<<< HEAD
             this.multiplicar.Location = new System.Drawing.Point(296, 366);
+=======
+            this.multiplicar.Location = new System.Drawing.Point(395, 450);
+            this.multiplicar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.multiplicar.Name = "multiplicar";
             this.multiplicar.Size = new System.Drawing.Size(97, 65);
             this.multiplicar.TabIndex = 21;
@@ -789,6 +1052,516 @@ namespace Equipo_HJF
             this.panelContenedor.Size = new System.Drawing.Size(398, 680);
             this.panelContenedor.TabIndex = 2;
             // 
+<<<<<<< HEAD
+=======
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.button28);
+            this.panel6.Controls.Add(this.button29);
+            this.panel6.Controls.Add(this.button30);
+            this.panel6.Controls.Add(this.button31);
+            this.panel6.Controls.Add(this.button32);
+            this.panel6.Controls.Add(this.button33);
+            this.panel6.Controls.Add(this.button16);
+            this.panel6.Controls.Add(this.button17);
+            this.panel6.Controls.Add(this.button18);
+            this.panel6.Controls.Add(this.button19);
+            this.panel6.Controls.Add(this.button20);
+            this.panel6.Controls.Add(this.button21);
+            this.panel6.Controls.Add(this.button22);
+            this.panel6.Controls.Add(this.button23);
+            this.panel6.Controls.Add(this.button24);
+            this.panel6.Controls.Add(this.button25);
+            this.panel6.Controls.Add(this.button26);
+            this.panel6.Controls.Add(this.button27);
+            this.panel6.Controls.Add(this.button10);
+            this.panel6.Controls.Add(this.button11);
+            this.panel6.Controls.Add(this.button12);
+            this.panel6.Controls.Add(this.button13);
+            this.panel6.Controls.Add(this.button14);
+            this.panel6.Controls.Add(this.button15);
+            this.panel6.Controls.Add(this.button9);
+            this.panel6.Controls.Add(this.button8);
+            this.panel6.Controls.Add(this.button7);
+            this.panel6.Controls.Add(this.button6);
+            this.panel6.Controls.Add(this.button5);
+            this.panel6.Controls.Add(this.button4);
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(531, 799);
+            this.panel6.TabIndex = 38;
+            this.panel6.Visible = false;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button4.Location = new System.Drawing.Point(415, 712);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(100, 80);
+            this.button4.TabIndex = 35;
+            this.button4.Text = "=";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button5.Location = new System.Drawing.Point(415, 625);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(100, 80);
+            this.button5.TabIndex = 36;
+            this.button5.Text = "+";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button6.Location = new System.Drawing.Point(414, 537);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(100, 80);
+            this.button6.TabIndex = 37;
+            this.button6.Text = "-";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button7.Location = new System.Drawing.Point(414, 450);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(100, 80);
+            this.button7.TabIndex = 38;
+            this.button7.Text = "x";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button8.Location = new System.Drawing.Point(415, 363);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(100, 80);
+            this.button8.TabIndex = 39;
+            this.button8.Text = "/";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button9.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button9.Location = new System.Drawing.Point(414, 275);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(100, 80);
+            this.button9.TabIndex = 40;
+            this.button9.Text = "Borrar";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button10.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button10.Location = new System.Drawing.Point(315, 275);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(100, 80);
+            this.button10.TabIndex = 46;
+            this.button10.Text = "C";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button11.Location = new System.Drawing.Point(316, 363);
+            this.button11.Margin = new System.Windows.Forms.Padding(4);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(100, 80);
+            this.button11.TabIndex = 45;
+            this.button11.Text = "%";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button12.Location = new System.Drawing.Point(315, 450);
+            this.button12.Margin = new System.Windows.Forms.Padding(4);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(100, 80);
+            this.button12.TabIndex = 44;
+            this.button12.Text = "9";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button13.Location = new System.Drawing.Point(315, 537);
+            this.button13.Margin = new System.Windows.Forms.Padding(4);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(100, 80);
+            this.button13.TabIndex = 43;
+            this.button13.Text = "6";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            this.button14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button14.Location = new System.Drawing.Point(316, 625);
+            this.button14.Margin = new System.Windows.Forms.Padding(4);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(100, 80);
+            this.button14.TabIndex = 42;
+            this.button14.Text = "3";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            this.button15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button15.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button15.Location = new System.Drawing.Point(316, 712);
+            this.button15.Margin = new System.Windows.Forms.Padding(4);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(100, 80);
+            this.button15.TabIndex = 41;
+            this.button15.Text = ".";
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            this.button16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button16.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button16.Location = new System.Drawing.Point(117, 275);
+            this.button16.Margin = new System.Windows.Forms.Padding(4);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(100, 80);
+            this.button16.TabIndex = 58;
+            this.button16.Text = "<<";
+            this.button16.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            this.button17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button17.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button17.Location = new System.Drawing.Point(118, 363);
+            this.button17.Margin = new System.Windows.Forms.Padding(4);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(100, 80);
+            this.button17.TabIndex = 57;
+            this.button17.Text = "(";
+            this.button17.UseVisualStyleBackColor = true;
+            // 
+            // button18
+            // 
+            this.button18.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button18.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button18.Location = new System.Drawing.Point(117, 450);
+            this.button18.Margin = new System.Windows.Forms.Padding(4);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(100, 80);
+            this.button18.TabIndex = 56;
+            this.button18.Text = "7";
+            this.button18.UseVisualStyleBackColor = true;
+            // 
+            // button19
+            // 
+            this.button19.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button19.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button19.Location = new System.Drawing.Point(117, 537);
+            this.button19.Margin = new System.Windows.Forms.Padding(4);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(100, 80);
+            this.button19.TabIndex = 55;
+            this.button19.Text = "4";
+            this.button19.UseVisualStyleBackColor = true;
+            // 
+            // button20
+            // 
+            this.button20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button20.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button20.Location = new System.Drawing.Point(118, 625);
+            this.button20.Margin = new System.Windows.Forms.Padding(4);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(100, 80);
+            this.button20.TabIndex = 54;
+            this.button20.Text = "1";
+            this.button20.UseVisualStyleBackColor = true;
+            // 
+            // button21
+            // 
+            this.button21.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button21.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button21.Location = new System.Drawing.Point(118, 712);
+            this.button21.Margin = new System.Windows.Forms.Padding(4);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(100, 80);
+            this.button21.TabIndex = 53;
+            this.button21.Text = "+/-";
+            this.button21.UseVisualStyleBackColor = true;
+            // 
+            // button22
+            // 
+            this.button22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button22.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button22.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button22.Location = new System.Drawing.Point(216, 275);
+            this.button22.Margin = new System.Windows.Forms.Padding(4);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(100, 80);
+            this.button22.TabIndex = 52;
+            this.button22.Text = ">>";
+            this.button22.UseVisualStyleBackColor = true;
+            // 
+            // button23
+            // 
+            this.button23.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button23.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button23.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button23.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button23.Location = new System.Drawing.Point(217, 363);
+            this.button23.Margin = new System.Windows.Forms.Padding(4);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(100, 80);
+            this.button23.TabIndex = 51;
+            this.button23.Text = ")";
+            this.button23.UseVisualStyleBackColor = true;
+            // 
+            // button24
+            // 
+            this.button24.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button24.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button24.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button24.Location = new System.Drawing.Point(216, 450);
+            this.button24.Margin = new System.Windows.Forms.Padding(4);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(100, 80);
+            this.button24.TabIndex = 50;
+            this.button24.Text = "8";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // button25
+            // 
+            this.button25.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button25.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button25.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button25.Location = new System.Drawing.Point(216, 537);
+            this.button25.Margin = new System.Windows.Forms.Padding(4);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(100, 80);
+            this.button25.TabIndex = 49;
+            this.button25.Text = "5";
+            this.button25.UseVisualStyleBackColor = true;
+            // 
+            // button26
+            // 
+            this.button26.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button26.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button26.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button26.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button26.Location = new System.Drawing.Point(217, 625);
+            this.button26.Margin = new System.Windows.Forms.Padding(4);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(100, 80);
+            this.button26.TabIndex = 48;
+            this.button26.Text = "2";
+            this.button26.UseVisualStyleBackColor = true;
+            // 
+            // button27
+            // 
+            this.button27.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button27.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button27.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button27.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button27.Location = new System.Drawing.Point(217, 712);
+            this.button27.Margin = new System.Windows.Forms.Padding(4);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(100, 80);
+            this.button27.TabIndex = 47;
+            this.button27.Text = "0";
+            this.button27.UseVisualStyleBackColor = true;
+            // 
+            // button28
+            // 
+            this.button28.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button28.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button28.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button28.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button28.Location = new System.Drawing.Point(18, 275);
+            this.button28.Margin = new System.Windows.Forms.Padding(4);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(100, 80);
+            this.button28.TabIndex = 64;
+            this.button28.Text = "A";
+            this.button28.UseVisualStyleBackColor = true;
+            // 
+            // button29
+            // 
+            this.button29.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button29.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button29.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button29.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button29.Location = new System.Drawing.Point(19, 363);
+            this.button29.Margin = new System.Windows.Forms.Padding(4);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(100, 80);
+            this.button29.TabIndex = 63;
+            this.button29.Text = "B";
+            this.button29.UseVisualStyleBackColor = true;
+            // 
+            // button30
+            // 
+            this.button30.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button30.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button30.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button30.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button30.Location = new System.Drawing.Point(18, 450);
+            this.button30.Margin = new System.Windows.Forms.Padding(4);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(100, 80);
+            this.button30.TabIndex = 62;
+            this.button30.Text = "C";
+            this.button30.UseVisualStyleBackColor = true;
+            // 
+            // button31
+            // 
+            this.button31.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button31.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button31.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button31.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button31.Location = new System.Drawing.Point(18, 537);
+            this.button31.Margin = new System.Windows.Forms.Padding(4);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(100, 80);
+            this.button31.TabIndex = 61;
+            this.button31.Text = "D";
+            this.button31.UseVisualStyleBackColor = true;
+            // 
+            // button32
+            // 
+            this.button32.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button32.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button32.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button32.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button32.Location = new System.Drawing.Point(19, 625);
+            this.button32.Margin = new System.Windows.Forms.Padding(4);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(100, 80);
+            this.button32.TabIndex = 60;
+            this.button32.Text = "E";
+            this.button32.UseVisualStyleBackColor = true;
+            // 
+            // button33
+            // 
+            this.button33.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button33.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button33.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button33.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button33.Location = new System.Drawing.Point(19, 712);
+            this.button33.Margin = new System.Windows.Forms.Padding(4);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(100, 80);
+            this.button33.TabIndex = 59;
+            this.button33.Text = "F";
+            this.button33.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.BackColor = System.Drawing.Color.Black;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox1.Location = new System.Drawing.Point(4, 7);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(522, 201);
+            this.textBox1.TabIndex = 65;
+            this.textBox1.Text = "0";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -816,6 +1589,11 @@ namespace Equipo_HJF
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+<<<<<<< HEAD
+=======
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+>>>>>>> 6492471354145557ac4bb6f520d478422615f34a
             this.ResumeLayout(false);
 
         }
@@ -870,5 +1648,37 @@ namespace Equipo_HJF
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
     }
 }
