@@ -80,6 +80,8 @@ namespace Equipo_HJF
         private void estandar_Click(object sender, EventArgs e)
         {
             PanelMenu.Visible = false;
+            panel6.Visible = false;
+            MenuVertical.Visible = true;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -411,6 +413,12 @@ namespace Equipo_HJF
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            PanelMenu.Visible = false;
+            panel6.Visible = true;
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
         }
