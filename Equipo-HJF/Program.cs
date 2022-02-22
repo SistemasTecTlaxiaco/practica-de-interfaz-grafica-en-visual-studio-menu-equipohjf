@@ -7,7 +7,7 @@ using System.Windows.Forms;
 namespace Equipo_HJF
 {
     static class Program
-    {
+    {//
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
